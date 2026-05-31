@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eigen Digital enpowers businesses worflows through automated systems and digital architecture.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,800;1,14..32,400&display=swap" rel="stylesheet">
+    <script type="module" src="./src/main.ts"></script>
+    <title>Eigen Digital</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-container">
+                <img width="30" height="20.56" src="/eigen-digital-mini.svg" alt="Eigen Digital logo">
+                <div class="navigation" role="navigation">
+                    <div class="nav-list" role="list">
+                        <a role="listitem" href="">Products</a>
+                    </div>
+                </div>
+                <div class="cta-container">
+                    <a href="" aria-label="Talk to us" class="button primary">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main></main>
+    <footer>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="company-section">
+                    <img width="100px" height="74.67px" src="/eigen-digital-full-logo-white.svg" alt="Eigen Digital logo">
+                    <p class="description">
+                        Powering businesses through automated systems and digital architecture.
+                    </p>
+                    <div class="social-handles-section" role="list">
+                        <a role="listitem" href="" aria-label="Visit our LinkedIn page" target="_blank" rel="noopener"><img width="24" height="24" src="/linkedin-logo.svg" alt="LinkedIn logo" aria-hidden="true"></a>
+                        <a role="listitem" href="" aria-label="Check our Instagram page" target="_blank" rel="noopener"><img width="24" height="24" src="/instagram-logo.svg" alt="Instagram logo" aria-hidden="true"></a>
+                        <a role="listitem" href="" aria-label="Message us on X (formerly Twitter)" target="_blank" rel="noopener"><img width="24" height="24" src="/twitter-logo.svg" alt="X logo" aria-hidden="true"></a>
+                        <a role="listitem" href="" aria-label="Watch any of our YouTube videos" target="_blank" rel="noopener"><img width="24" height="24" src="/youtube-logo.svg" alt="YouTube logo" aria-hidden="true"></a>
+                    </div>
+                </div>
+                <div class="nav-section" role="navigation">
+                    <div class="nav-list-container">
+                        <span class="nav-list-header">Products</span>
+                        <div class="nav-list" role="list">
+                            <a href="" role="listitem">Templates</a>
+                        </div>
+                    </div>
+                    <div class="nav-list-container">
+                        <span class="nav-list-header">Company</span>
+                        <div class="nav-list" role="list">
+                            <a href="" role="listitem">About Us</a>
+                            <a href="" role="listitem">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="copyright-section">
+                    <span>&copy; </span><span id="current-year"></span> <span>Eigen Digital</span>. <span>All rights reserved.</span>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    <script>
+        const currentYearSpan = document.getElementById('current-year');
+
+        if (!currentYearSpan) console.warn('Current year display for copyright not found.');
+        currentYearSpan.textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

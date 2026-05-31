@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page describes the privacy policy regarding the Job Application Tracker template">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,800;1,14..32,400&display=swap" rel="stylesheet">
+    <script type="module" src="/src/scripts/pages/products/job-application-tracker/privacy-policy.ts"></script>
+    <title>Privacy Policy - Job Application Tracker</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div>
+            <h1>Privacy Policy</h1>
+            <div class="metadata-container">
+                <span>Effective Date: </span><span>15<span class="sub">th</span> June, 2026</span>
+            </div>
+            <div class="intro-container">
+                <h2>Introduction</h2>
+                <p><span class="bold">Eigen Digital </span>("we," "us," or "our") respects your privacy and is committed to protecting your information.</p>
+                <p>This Privacy Policy explains how information is handled when you purchase and use the Job Application Tracker Google Sheets template (the "Product")</p>
+            </div>
+            <div class="sections-contianer">
+                <section>
+                    <h2>Data Collection and Usage</h2>
+                    <div>
+                        <p>Because the Product is a Google Sheets template copied directly to your personal Google account, it operates primarily within your Google Workspace environment. 
+                            However, to power its advanced features, maintain code integrity and fixes any reported bugs, the template's embedded Google Apps Script communicates with <span class="bold">JAT</span>, 
+                            a secure external library and service managed by <span class="bold">Eigen Digital</span>. 
+                            All information you input—including job roles, offer tracking details, contacts, and personal notes—remains strictly 
+                            within your own Google account and is subject to Google's Privacy Policy.
+                        </p>
+
+                        <section>
+                            <h3>JAT External Library</h3>
+                            <div>
+                                <p>
+                                    The template's embedded Google Apps Script securely interacts with JAT, an external code library managed by Eigen Digital.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <span class="bold">Stateless Processing (No Storage):</span> When you execute a custom function or menu item, the script securely transmits the necessary services and variables to the JAT library to process the logic. 
+                                        JAT only reads this data in real-time to run the requested function. It does not collect, store, log, or retain any of your personal information, email addresses, or spreadsheet data. 
+                                        Once the function is executed and the result is sent back to your Google Sheet, the data is instantly dropped from memory.
+                                    </li>
+                                    <li>
+                                        <span class="bold">Google Permissions: </span>
+                                        The permissions requested during initialization (Google Sheets, Google Calendar, ScriptApp, etc.) are used solely to allow the local template to read your inputs, pass them to the JAT library for processing, 
+                                        and apply the resulting automation back to your personal Google account.
+                                    </li>
+                                    <li>
+                                        <span class="bold">Zero Third-Party Sharing: </span>
+                                        Because we do not store any data processed by JAT, your information can never be shared, sold, or accessed by third parties.
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <section>
+                    <h2>Google Apps Script and Permissions</h2>
+                    <div>
+                        <p>
+                            The Job Application Management System utilizes embedded Google Apps Script to automate workflows 
+                            (such as formatting, generating calendar events for interviews, and custom menu interfaces). 
+                            To function, the script requires you to grant specific Google account permissions (OAuth scopes).
+                        </p>
+                        <p>
+                            When you authorize the script, you are granting the script access to perform actions strictly within 
+                            your own Google Account. The specific permissions required are:
+                        </p>
+
+                        <ul>
+                            <li><span class="bold">See, edit, create, and delete all your Google Sheets spreadsheets: </span>Required to read and write your job application data within the template.</li>
+                            <li><span class="bold">See, edit, share, and permanently delete all the calendars you can access using Google Calendar: </span>Required to automate the creation of interview events or reminders.</li>
+                            <li><span class="bold">Connect to ScriptApp service:</span> Required to run the background automation triggers.</li>
+                            <li><span class="bold">Display and run third-party web content in prompts and sidebars inside Google applications (Spreadsheet UI): </span>Required to display custom  dialogs and interactive menus.</li>
+                            <li><span class="bold">Access limited session information provided by Google to identify the active user: Required for personalized user experience and providing technical support</span></li>
+                        </ul>
+
+                        <p>
+                            We do not <span class="bold">sell</span>, <span class="bold">rent</span>, or <span class="bold">share</span> user information with third parties for advertising purposes.
+                            Any data accessed through Google services is used solely to provide the functionality of the Job Application Tracker.
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <h2>Purchase Information</h2>
+                    <div>
+                        <p>
+                            When you purchase the Product through our storefronts (Gumroad, Etsy), 
+                            those third-party platforms collect standard payment and billing information. 
+                            We only receive the information necessary to fulfill your order (such as your <span class="bold">name</span> and <span class="bold">email address</span>). 
+                            We do not receive or store your credit card details.
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <h2>Contact Us</h2>
+                    <div>
+                        <p>If you have any questions about this Privacy Policy, <a href="mailto:eigendigitalgh@gmail.com">please contact us</a>.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="company-section">
+                    <img width="25" height="17.14" src="/eigen-digital-mini.svg" alt="Eigen Digital logo">
+                </div>
+                <div class="copyright-section">
+                    <span>&copy; </span><span id="current-year"></span> <span>Eigen Digital</span>. <span>All rights reserved.</span>
+                </div>
+                <div class="legal-docs-section">
+                    <a href="">Terms and Conditions</a>
+                    <a href="">EULA</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

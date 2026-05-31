@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script type="module" src="/src/scripts/pages/products/job-application-tracker/index.ts"></script>
+    <title>Job Application Tracker - Eigen Digital</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="company-section">
+                    <img width="25" height="17.14" src="/eigen-digital-mini.svg" alt="Eigen Digital logo">
+                </div>
+                <div class="copyright-section">
+                    <span>&copy; </span><span id="current-year"></span> <span>Eigen Digital</span>. <span>All rights reserved.</span>
+                </div>
+                <div class="legal-docs-section">
+                    <a href="">Terms and Conditions</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">EULA</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const currentYearSpan = document.getElementById('current-year');
+
+        if (!currentYearSpan) console.warn('Current year display for copyright not found.');
+        currentYearSpan.textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "types": ["vite/client", "node"],
+        "paths": {
+            "@/*": ["./src/*"],
+            "@/styles/components/*": ["./src/styles/components/*"],
+            "@/styles/elements/*": ["./src/styles/elements/*"],
+            "@/styles/pages/*": ["./src/styles/pages/*"],
+            "@/scripts/pages/*": ["./src/scripts/pages/*"]
+        }
+    }
+}

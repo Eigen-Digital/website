@@ -1,0 +1,23 @@
+{
+    "name": "eigen-digital-website",
+    "version": "1.0.0",
+    "description": "The original webpage for Eigen Digital",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "author": {
+        "name": "Eigen Digital",
+        "email": "eigendigital.gh@gmail.com"
+    },
+    "contributors": [
+        {
+            "name": "Emmanuel Fosu",
+            "email": "emmanuel.fosuduffour@gmail.com"
+        }
+    ],
+    "devDependencies": {
+        "@types/node": "^25.9.1",
+        "vite": "^8.0.14"
+    }
+}
