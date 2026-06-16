@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "jsdoc": {
+    "addDefaultToDescription": true,
+    "bracketSpacing": true,
+    "capitalizeDescriptions": true,
+    "descriptionWithDot": true,
+    "separateReturnsFromParam": true
+  },
+  "ignorePatterns": ["tsconfig.json", "package.json"]
+}

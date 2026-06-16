@@ -1,76 +1,1432 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Eigen Digital enpowers businesses worflows through automated systems and digital architecture.">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,800;1,14..32,400&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Eigen Digital enpowers businesses worflows through automated systems and digital architecture."
+    />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,800;1,14..32,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" src="./src/main.ts"></script>
     <title>Eigen Digital</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header">
-            <div class="header-container">
-                <img width="30" height="20.56" src="/eigen-digital-mini.svg" alt="Eigen Digital logo">
-                <div class="navigation" role="navigation">
-                    <div class="nav-list" role="list">
-                        <a role="listitem" href="">Products</a>
+      <div class="header">
+        <div class="header-container">
+          <img
+            width="28"
+            height="28"
+            style="object-fit: contain; object-position: center"
+            src="/eigen-digital-mini.svg"
+            alt="Eigen Digital logo"
+          />
+          <div class="navigation" role="navigation">
+            <div class="nav-list" role="list">
+              <span role="listitem" popovertarget="products-popover"
+                >Products
+                <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4.43057 8.51192C4.70013 8.19743 5.17361 8.161 5.4881 8.43057L12 14.0122L18.5119 8.43057C18.8264 8.16101 19.2999 8.19743 19.5694 8.51192C19.839 8.82642 19.8026 9.29989 19.4881 9.56946L12.4881 15.5695C12.2072 15.8102 11.7928 15.8102 11.5119 15.5695L4.51191 9.56946C4.19742 9.29989 4.161 8.82641 4.43057 8.51192Z"
+                  />
+                </svg>
+                <div class="menu-popover" id="products-popover" popover="auto">
+                  <a href="#" class="menu">
+                    <div class="img-container">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M20 3H4C3.44772 3 3 3.44772 3 4V9C3 9.55228 3.44772 10 4 10H20C20.5523 10 21 9.55228 21 9V4C21 3.44772 20.5523 3 20 3Z"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11 14H4C3.44772 14 3 14.4477 3 15V20C3 20.5523 3.44772 21 4 21H11C11.5523 21 12 20.5523 12 20V15C12 14.4477 11.5523 14 11 14Z"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M20 14H17C16.4477 14 16 14.4477 16 15V20C16 20.5523 16.4477 21 17 21H20C20.5523 21 21 20.5523 21 20V15C21 14.4477 20.5523 14 20 14Z"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
                     </div>
+                    <div class="description-container">
+                      <span class="heading">Templates</span>
+                      <span class="subheading"
+                        >Ready-to-use templates for business and personal productivity</span
+                      >
+                    </div>
+                  </a>
                 </div>
-                <div class="cta-container">
-                    <a href="" aria-label="Talk to us" class="button primary">Contact us</a>
-                </div>
+              </span>
             </div>
+          </div>
+          <div class="cta-container">
+            <a href="" aria-label="Talk to us" class="button primary">Contact us</a>
+          </div>
         </div>
+      </div>
     </header>
-    <main></main>
-    <footer>
-        <div class="footer">
-            <div class="footer-container">
-                <div class="company-section">
-                    <img width="100px" height="74.67px" src="/eigen-digital-full-logo-white.svg" alt="Eigen Digital logo">
-                    <p class="description">
-                        Powering businesses through automated systems and digital architecture.
-                    </p>
-                    <div class="social-handles-section" role="list">
-                        <a role="listitem" href="" aria-label="Visit our LinkedIn page" target="_blank" rel="noopener"><img width="24" height="24" src="/linkedin-logo.svg" alt="LinkedIn logo" aria-hidden="true"></a>
-                        <a role="listitem" href="" aria-label="Check our Instagram page" target="_blank" rel="noopener"><img width="24" height="24" src="/instagram-logo.svg" alt="Instagram logo" aria-hidden="true"></a>
-                        <a role="listitem" href="" aria-label="Message us on X (formerly Twitter)" target="_blank" rel="noopener"><img width="24" height="24" src="/twitter-logo.svg" alt="X logo" aria-hidden="true"></a>
-                        <a role="listitem" href="" aria-label="Watch any of our YouTube videos" target="_blank" rel="noopener"><img width="24" height="24" src="/youtube-logo.svg" alt="YouTube logo" aria-hidden="true"></a>
-                    </div>
-                </div>
-                <div class="nav-section" role="navigation">
-                    <div class="nav-list-container">
-                        <span class="nav-list-header">Products</span>
-                        <div class="nav-list" role="list">
-                            <a href="" role="listitem">Templates</a>
-                        </div>
-                    </div>
-                    <div class="nav-list-container">
-                        <span class="nav-list-header">Company</span>
-                        <div class="nav-list" role="list">
-                            <a href="" role="listitem">About Us</a>
-                            <a href="" role="listitem">Contact</a>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <div class="copyright-section">
-                    <span>&copy; </span><span id="current-year"></span> <span>Eigen Digital</span>. <span>All rights reserved.</span>
-                </div>
-                
+    <main>
+      <div>
+        <div class="hero-section-container">
+          <div class="hero-section">
+            <h1>Automate Your Business Processes and Eliminate Repetitive Work</h1>
+            <p class="subheadline">
+              Streamline operations, connect your tools, and turn manual work into efficient,
+              scalable workflows.
+            </p>
+            <div class="cta-container">
+              <a href="" class="button primary">Discuss Your Project</a>
             </div>
+          </div>
+          <div class="hero-section-preview">
+            <img
+              id="gradient-boxes"
+              src="/gradient-boxes.webp"
+              alt="gradient boxes"
+              aria-hidden="false"
+            />
+          </div>
         </div>
+        <div class="services-section-container">
+          <div class="services-section">
+            <span class="section-tag">Services</span>
+            <h2>Solutions Built for Your Business</h2>
+            <div class="services">
+              <section class="service">
+                <div class="description-container">
+                  <img
+                    width="24"
+                    height="24"
+                    style="object-fit: contain; object-position: center"
+                    src="/sheets.svg"
+                    alt="sheets"
+                    aria-hidden="true"
+                  />
+                  <h3>Spreadsheet Solutions</h3>
+                  <p>
+                    Custom spreadsheets that automate calculations, reporting, tracking, and
+                    business processes.
+                  </p>
+                </div>
+                <div
+                  class="service-preview"
+                  style="--background-image: url(&quot;/solutions.png&quot;)"
+                ></div>
+              </section>
+              <section class="service">
+                <div class="description-container">
+                  <img
+                    width="24"
+                    height="24"
+                    style="object-fit: contain; object-position: center"
+                    src="/automation.svg"
+                    alt="automation"
+                    aria-hidden="true"
+                  />
+                  <h3>Business Automation</h3>
+                  <p>
+                    Automate repetitive tasks and workflows to save time and improve consistency.
+                  </p>
+                </div>
+                <div
+                  class="service-preview"
+                  style="
+                    --background-image: url(&quot;/automations.png&quot;);
+                    --background-size: 75%;
+                  "
+                ></div>
+              </section>
+              <section class="service">
+                <div class="description-container">
+                  <img
+                    width="24"
+                    height="24"
+                    style="object-fit: contain; object-position: center"
+                    src="/applications.svg"
+                    alt="applications"
+                    aria-hidden="true"
+                  />
+                  <h3>Custom Applications</h3>
+                  <p>Tailored applications built around your business requirements.</p>
+                </div>
+                <div
+                  class="service-preview"
+                  style="
+                    --background-image: url(&quot;/windows.png&quot;);
+                    --background-position: bottom -15px right -20px;
+                    --background-size: 68%;
+                  "
+                ></div>
+              </section>
+              <section class="service">
+                <div class="description-container">
+                  <img
+                    width="24"
+                    height="24"
+                    style="object-fit: contain; object-position: center"
+                    src="/systems.svg"
+                    alt="systems"
+                    aria-hidden="true"
+                  />
+                  <h3>System Integrations</h3>
+                  <p>Connect your business tools so information flows automatically.</p>
+                </div>
+                <div
+                  class="service-preview"
+                  style="--background-image: url(&quot;/systems.png&quot;); --background-size: 72%"
+                ></div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="solution-flow-section-container">
+          <div class="solution-flow-section">
+            <span class="section-tag">Flow</span>
+            <h2>How we Build</h2>
+            <div class="flows">
+              <section class="flow">
+                <div class="text">
+                  <h3>
+                    <span class="counter">01 </span
+                    ><span class="heading" style="--hovered-color: rgb(181, 53, 53)">Assess</span>
+                  </h3>
+                  <p>
+                    Understand your business, uncover workflow bottlenecks, and identify high-impact
+                    automation opportunities that boost efficiency and reduce costs.
+                  </p>
+                </div>
+                <div
+                  class="flow-preview"
+                  style="--background-image: url(&quot;/assess.png&quot;)"
+                ></div>
+              </section>
+              <section class="flow">
+                <div class="text">
+                  <h3><span class="counter">02 </span><span class="heading">Build</span></h3>
+                  <p>
+                    Build tailored automation solutions that streamline operations, improve data
+                    management, and empower teams to work more efficiently.
+                  </p>
+                </div>
+                <div
+                  class="flow-preview"
+                  style="--background-image: url(&quot;/build.png&quot;)"
+                ></div>
+              </section>
+              <section class="flow">
+                <div class="text">
+                  <h3>
+                    <span class="counter">03 </span
+                    ><span class="heading" style="--hovered-color: rgb(223, 13, 223)">Deploy</span>
+                  </h3>
+                  <p>
+                    Deploy your solution seamlessly with minimal disruption, ensuring a smooth
+                    transition and rapid adoption across your team.
+                  </p>
+                </div>
+                <div
+                  class="flow-preview"
+                  style="--background-image: url(&quot;/deploy.png&quot;)"
+                ></div>
+              </section>
+              <section class="flow">
+                <div class="text">
+                  <h3>
+                    <span class="counter">04 </span
+                    ><span class="heading" style="--hovered-color: rgb(39, 179, 39)">Optimize</span>
+                  </h3>
+                  <p>
+                    Continuously refine and optimize your systems to adapt to evolving business
+                    needs, improve performance, and support long-term growth.
+                  </p>
+                </div>
+                <div
+                  class="flow-preview"
+                  style="--background-image: url(&quot;/optimize.png&quot;)"
+                ></div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="businesses-showcase-section-container">
+          <div class="businesses-showcase-section">
+            <span class="section-tag">Who we work for?</span>
+            <div>
+              <span class="static">No More Manual Busywork for </span>
+              <div class="dynamic-container">
+                <div class="dynamic-slider">
+                  <div class="dynamic">
+                    <span>Small Businesses</span>
+                  </div>
+                  <div class="dynamic">
+                    <span style="color: beige;">Manufacturing</span>
+                  </div>
+                  <div class="dynamic">
+                    <span style="color: yellow;">Retails</span>
+                  </div>
+                  <div class="dynamic">
+                    <span style="color: rgb(230, 77, 77);">Logistics</span>
+                  </div>
+                  <div class="dynamic">
+                    <span style="color: rgb(165, 43, 251);">Healthcare Administration</span>
+                  </div>
+                  <div class="dynamic">
+                    <span style="color: aquamarine;">Educational Institutions</span>
+                  </div>
+                  <div class="dynamic">
+                    <span style="color: rgb(248, 31, 248);">Consumer & Local Services</span>
+                  </div>
+                  <div class="dynamic">
+                    <span>Consulting Firms</span>
+                  </div>
+                  <div class="dynamic">
+                    <span style="color: burlywood;">Inventory & Supply Chain</span>
+                  </div>
+                  <div class="dynamic">
+                    <span>Professional Services</span>
+                  </div>
+                  <div class="dynamic">
+                    <span style="color: rgb(34, 251, 251);">Nonprofits & Institutions</span>
+                  </div>
+                  <div class="dynamic">
+                    <span style="color: rgb(255, 131, 43);">Accounting & Financial Firms</span>
+                  </div>
+                  <div class="dynamic">
+                    <span style="color: rgb(42, 146, 191);">Procurement Firms</span>
+                  </div>
+                  <div class="dynamic">
+                    <span>Small Businesses</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tech-stack-section-container">
+          <div class="tech-stack-section">
+            <section>
+              <h3>Build Around Your Existing Tools</h3>
+              <p>
+                Our solutions also integrate seamlessly with the tools your business already relies
+                on.
+              </p>
+              <div class="tech-stack-preview">
+                <div class="forward">
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/airtable.svg"
+                    alt="airtable"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/anthropic.png"
+                    alt="anthropic"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/appian.svg"
+                    alt="appian"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/azure.svg"
+                    alt="azure"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/b.svg"
+                    alt="b"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/chatgpt.svg"
+                    alt="chatgpt"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/excel.svg"
+                    alt="excel"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/gmail.svg"
+                    alt="gmail"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/google-ads.svg"
+                    alt="google ads"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/gemini.webp"
+                    alt="gemini"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/google-docs.svg"
+                    alt="google docs"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/google-sheets.svg"
+                    alt="google sheets"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/hubspot.svg"
+                    alt="hubspot"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/langflow.svg"
+                    alt="langflow"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/make.png"
+                    alt="make"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/monday.svg"
+                    alt="monday"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/n8n.svg"
+                    alt="n8n"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/notion.svg"
+                    alt="notion"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/outlook.svg"
+                    alt="outlook"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/retool.svg"
+                    alt="retool"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/salesforce.svg"
+                    alt="salesforce"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/shopify.svg"
+                    alt="shopify"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/slack.svg"
+                    alt="slack"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/workato.svg"
+                    alt="workato"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/z.png"
+                    alt="z"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/zapier.svg"
+                    alt="zapier"
+                    aria-hidden="true"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/zoho.svg"
+                    alt="zoho"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/airtable.svg"
+                    alt="airtable"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/anthropic.png"
+                    alt="anthropic"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/appian.svg"
+                    alt="appian"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/azure.svg"
+                    alt="azure"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/b.svg"
+                    alt="b"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/chatgpt.svg"
+                    alt="chatgpt"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/excel.svg"
+                    alt="excel"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/gmail.svg"
+                    alt="gmail"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/google-ads.svg"
+                    alt="google ads"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/gemini.webp"
+                    alt="gemini"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/google-docs.svg"
+                    alt="google docs"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/google-sheets.svg"
+                    alt="google sheets"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/hubspot.svg"
+                    alt="hubspot"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/langflow.svg"
+                    alt="langflow"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/make.png"
+                    alt="make"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/monday.svg"
+                    alt="monday"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/n8n.svg"
+                    alt="n8n"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/notion.svg"
+                    alt="notion"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/outlook.svg"
+                    alt="outlook"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/retool.svg"
+                    alt="retool"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/salesforce.svg"
+                    alt="salesforce"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/shopify.svg"
+                    alt="shopify"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/slack.svg"
+                    alt="slack"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/workato.svg"
+                    alt="workato"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/z.png"
+                    alt="z"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/zapier.svg"
+                    alt="zapier"
+                    aria-hidden="true"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/zoho.svg"
+                    alt="zoho"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="reverse">
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/airtable.svg"
+                    alt="airtable"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/anthropic.png"
+                    alt="anthropic"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/appian.svg"
+                    alt="appian"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/azure.svg"
+                    alt="azure"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/b.svg"
+                    alt="b"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/chatgpt.svg"
+                    alt="chatgpt"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/excel.svg"
+                    alt="excel"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/gmail.svg"
+                    alt="gmail"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/google-ads.svg"
+                    alt="google ads"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/gemini.webp"
+                    alt="gemini"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/google-docs.svg"
+                    alt="google docs"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/google-sheets.svg"
+                    alt="google sheets"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/hubspot.svg"
+                    alt="hubspot"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/langflow.svg"
+                    alt="langflow"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/make.png"
+                    alt="make"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/monday.svg"
+                    alt="monday"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/n8n.svg"
+                    alt="n8n"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/notion.svg"
+                    alt="notion"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/outlook.svg"
+                    alt="outlook"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/retool.svg"
+                    alt="retool"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/salesforce.svg"
+                    alt="salesforce"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/shopify.svg"
+                    alt="shopify"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/slack.svg"
+                    alt="slack"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/workato.svg"
+                    alt="workato"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/z.png"
+                    alt="z"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/zapier.svg"
+                    alt="zapier"
+                    aria-hidden="true"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/zoho.svg"
+                    alt="zoho"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/airtable.svg"
+                    alt="airtable"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/anthropic.png"
+                    alt="anthropic"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/appian.svg"
+                    alt="appian"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/azure.svg"
+                    alt="azure"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/b.svg"
+                    alt="b"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/chatgpt.svg"
+                    alt="chatgpt"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/excel.svg"
+                    alt="excel"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/gmail.svg"
+                    alt="gmail"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/google-ads.svg"
+                    alt="google ads"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/gemini.webp"
+                    alt="gemini"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/google-docs.svg"
+                    alt="google docs"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/google-sheets.svg"
+                    alt="google sheets"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/hubspot.svg"
+                    alt="hubspot"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/langflow.svg"
+                    alt="langflow"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/make.png"
+                    alt="make"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/monday.svg"
+                    alt="monday"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/n8n.svg"
+                    alt="n8n"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/notion.svg"
+                    alt="notion"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/outlook.svg"
+                    alt="outlook"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/retool.svg"
+                    alt="retool"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/salesforce.svg"
+                    alt="salesforce"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/shopify.svg"
+                    alt="shopify"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/slack.svg"
+                    alt="slack"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/workato.svg"
+                    alt="workato"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/z.png"
+                    alt="z"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/zapier.svg"
+                    alt="zapier"
+                    aria-hidden="true"
+                  />
+                  <img
+                    width="40"
+                    height="40"
+                    style="object-fit: contain; object-position: center"
+                    src="/zoho.svg"
+                    alt="zoho"
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="values-section-container">
+          <div class="values-section">
+            <span class="section-tag">Why choose Eigen Digital?</span>
+            <section>
+              <h2>Built on Logic. Engineered for Impact.</h2>
+              <p>
+                We believe in lean, high-impact automation tailored to your exact scale, giving you
+                total system ownership with zero vendor lock-in.
+              </p>
+              <div class="contacts-container">
+                <a href="" class="button primary">Start Automating Your Business</a>
+              </div>
+              <div class="values-preview"></div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-container">
+          <div class="company-section">
+            <img
+              width="100px"
+              height="74.67px"
+              src="/eigen-digital-full-logo-white.svg"
+              alt="Eigen Digital logo"
+            />
+            <p class="description">
+              Powering businesses through automated systems and digital architecture.
+            </p>
+            <div class="social-handles-section" role="list">
+              <a
+                role="listitem"
+                href=""
+                aria-label="Visit our LinkedIn page"
+                target="_blank"
+                rel="noopener"
+                ><img
+                  width="24"
+                  height="24"
+                  src="/linkedin-logo.svg"
+                  alt="LinkedIn logo"
+                  aria-hidden="true"
+              /></a>
+              <a
+                role="listitem"
+                href=""
+                aria-label="Check our Instagram page"
+                target="_blank"
+                rel="noopener"
+                ><img
+                  width="24"
+                  height="24"
+                  src="/instagram-logo.svg"
+                  alt="Instagram logo"
+                  aria-hidden="true"
+              /></a>
+              <a
+                role="listitem"
+                href=""
+                aria-label="Message us on X (formerly Twitter)"
+                target="_blank"
+                rel="noopener"
+                ><img
+                  width="24"
+                  height="24"
+                  src="/twitter-logo.svg"
+                  alt="X logo"
+                  aria-hidden="true"
+              /></a>
+              <a
+                role="listitem"
+                href=""
+                aria-label="Watch any of our YouTube videos"
+                target="_blank"
+                rel="noopener"
+                ><img
+                  width="24"
+                  height="24"
+                  src="/youtube-logo.svg"
+                  alt="YouTube logo"
+                  aria-hidden="true"
+              /></a>
+            </div>
+          </div>
+          <div class="nav-section" role="navigation">
+            <div class="nav-list-container">
+              <span class="nav-list-header">Products</span>
+              <div class="nav-list" role="list">
+                <a href="" role="listitem">Templates</a>
+              </div>
+            </div>
+            <div class="nav-list-container">
+              <span class="nav-list-header">Company</span>
+              <div class="nav-list" role="list">
+                <a href="" role="listitem">About Us</a>
+                <a href="" role="listitem">Contact</a>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="copyright-section">
+            <span>&copy; </span><span id="current-year"></span> <span>Eigen Digital</span>.
+            <span>All rights reserved.</span>
+          </div>
+        </div>
+      </div>
     </footer>
-    <script>
-        const currentYearSpan = document.getElementById('current-year');
 
-        if (!currentYearSpan) console.warn('Current year display for copyright not found.');
-        currentYearSpan.textContent = new Date().getFullYear();
+    <script>
+      const currentYearSpan = document.getElementById("current-year");
+
+      if (!currentYearSpan) console.warn("Current year display for copyright not found.");
+      currentYearSpan.textContent = new Date().getFullYear();
     </script>
-</body>
+  </body>
 </html>

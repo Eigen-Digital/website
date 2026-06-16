@@ -1,59 +1,253 @@
 body {
-    font-family: var(--primary-font-family);
-    font-optical-sizing: auto;
-    margin: 0;
-    
-    --web-width: clamp(200px, 90vw, 1100px);
+  font-family: var(--primary-font-family);
+  font-optical-sizing: auto;
+  margin: 0;
+
+  --web-width: clamp(200px, 90vw, 1100px);
 }
 
 footer {
-    background-color: var(--neutral-950); 
-    font-size: 0.75em;
+  background-color: var(--neutral-950);
+  font-size: 0.75em;
 }
 
 footer > div {
-    padding-block: 20px;
-    width: var(--web-width);
-    margin-inline: auto;
+  padding-block: 20px;
+  width: var(--web-width);
+  margin-inline: auto;
 
-    color: var(--neutral-400);
+  color: var(--neutral-400);
 }
 
 .legal-docs-section {
-    margin-left: auto;
+  margin-left: auto;
 
-    display: flex;
-    gap: 25px;
-    flex-wrap: nowrap;
+  display: flex;
+  gap: 25px;
+  flex-wrap: nowrap;
 
-    a:hover {
-        color: var(--neutral-100);
+  a:hover {
+    color: var(--neutral-100);
+  }
+}
+
+h1 {
+  font-family: var(--secondary-font-family);
+  font-weight: 500;
+  font-size: clamp(2rem, 5vw, 3rem);
+  text-align: center;
+  line-height: 1.1;
+  max-width: 20ch;
+  margin-inline: auto;
+}
+
+.hero-section-container {
+  background-color: aliceblue;
+  background-image: linear-gradient(
+    transparent 40%,
+    var(--secondary-color-2) 70%,
+    var(--secondary-color-1) 100%
+  );
+}
+
+.hero-section {
+  text-align: center;
+  width: var(--web-width);
+  margin-inline: auto;
+  padding-block: 30px;
+
+  p {
+    font-size: clamp(0.875rem, 3vw, 1rem);
+    max-width: 45ch;
+    margin-inline: auto;
+    margin-block-start: 20px;
+    color: var(--neutral-700);
+  }
+
+  .outlined {
+    --outline-color: rgb(75, 75, 75);
+  }
+}
+
+.faq-section-container {
+  container-type: inline-size;
+  container-name: faq-section;
+}
+
+.faq-section {
+  width: var(--web-width);
+  margin-inline: auto;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+
+  h2 {
+    font-family: var(--secondary-font-family);
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    max-width: 15ch;
+    font-weight: 600;
+  }
+}
+
+.faq {
+  border-bottom: 1px solid var(--neutral-100);
+
+  summary:hover {
+    color: rgb(1, 1, 134);
+    cursor: pointer;
+
+    &::before {
+      color: inherit;
     }
+  }
+
+
+  p {
+    font-size: clamp(0.875rem, 5vw, 0.925rem);
+    color: var(--neutral-600);
+  }
+}
+
+summary {
+  font-size: clamp(0.875rem, 5vw, 0.925rem);
+  padding-block: 15px;
+  line-height: 1;
+  list-style: none;
+  line-height: 1.2;
+
+  &::before {
+    content: '+';
+    font-size: 1.2em;
+    color: var(--neutral-400);
+    margin-right: 8px;
+  }
+}
+
+details[open] summary::before {
+  content: '\00d7';
+}
+
+details > div {
+  padding-block-end: 15px;
+}
+
+.demo-section {
+  aspect-ratio: 16 / 9;
+  margin-block-start: 40px;
+  background-color: gray;
+  border-radius: 1em;
+}
+
+.cta-section {
+  margin-block-start: 15px;
+  display: flex;
+  justify-content: center;
+  column-gap: 25px;
+}
+
+.feature {
+  display: grid;
+  column-gap: 20px;
+
+  h3 {
+    font-family: var(--secondary-font-family);
+    font-weight: 500;
+    font-size: clamp(1.2rem, 5vw, 1.5rem);
+  }
+  p {
+    font-size: clamp(0.875rem, 5vw, 1rem);
+    color: var(--neutral-700);
+    margin-block-start: 10px;
+    max-width: 45ch;
+  }
+
+  section {
+    padding: clamp(20px, 50%, 50px);
+    background-color: cyan;
+  }
+}
+
+.right {
+  grid-template-columns: 1fr minmax(200px, 40%);
+
+  section {
+    order: 1;
+  }
+
+  .feature-preview {
+    order: 2;
+  }
+}
+
+.left {
+  grid-template-columns: minmax(200px, 40%) 1fr;
+
+  section {
+    order: 2;
+  }
+
+  .feature-preview {
+    order: 1;
+  }
+}
+
+.feature-preview {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: gray;
+}
+
+.features-section-container {
+  width: var(--web-width);
+  margin-inline: auto;
+  container-type: inline-size;
+  container-name: features-section;
 }
 
 .footer {
-
-    .footer-container {
-        grid-template-columns: auto auto 1fr;
-        column-gap: 10px;
-        grid-template-areas: none;
-    }
+  .footer-container {
+    grid-template-columns: auto auto 1fr;
+    column-gap: 10px;
+    grid-template-areas: none;
+  }
 }
 
 @container footer (width <= 650px) {
-   .footer .footer-container {
-        grid-template-columns: auto 1fr;
-        row-gap: 10px;
-    }
+  .footer .footer-container {
+    grid-template-columns: auto 1fr;
+    row-gap: 10px;
+  }
 
-    .legal-docs-section {
-        grid-column: span 2;
-        margin-left: 0;
-    }
+  .legal-docs-section {
+    grid-column: span 2;
+    margin-left: 0;
+  }
 }
 
+@container faq-section (width <= 920px) {
+  .faq-section {
+    grid-template-columns: auto;
+  }
+}
+
+@container features-section (width <= 600px) {
+  .feature {
+    grid-template-columns: auto;
+  }
+
+  section {
+    order: 2 !important;
+  }
+
+  .feature-preview {
+    order: 1 !important;
+  }
+}
 @media (prefers-reduced-motion: no-preference) {
-    .legal-docs-section a {
-        transition: color 200ms ease-in;
-    }
+  .legal-docs-section a, summary, summary::before {
+    transition: color 200ms ease-in;
+  }
+
+  
 }

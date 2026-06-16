@@ -1,18 +1,19 @@
 body {
-    --primary-font-family: "Inter", sans-serif;
-    --primary-color: #004aad;
-    --secondary-color-1: #222323;
-    --secondary-color-2: #dddddd;
-    --secondary-color-3: #ddfdfd;
-    --neutral-950: #0d0d0d;
-    --neutral-900: #1a1a1a;
-    --neutral-800: #333333;
-    --neutral-700: #4d4d4d;
-    --neutral-600: #666666;
-    --neutral-500: #808080;
-    --neutral-400: #999999;
-    --neutral-300: #b3b3b3;
-    --neutral-200: #cccccc;
-    --neutral-100: #e6e6e6;
-    --neutral-000: #ffffff;
+  --primary-font-family: "Inter", sans-serif;
+  --secondary-font-family: "DM Sans", "Inter", sans-serif;
+  --primary-color: #004aad;
+  --secondary-color-1: #4796ff;
+  --secondary-color-2: #c1c6f4;
+  --secondary-color-3: #ddfdfd;
+  --neutral-950: #0d0d0d;
+  --neutral-900: #1a1a1a;
+  --neutral-800: #333333;
+  --neutral-700: #4d4d4d;
+  --neutral-600: #666666;
+  --neutral-500: #808080;
+  --neutral-400: #999999;
+  --neutral-300: #b3b3b3;
+  --neutral-200: #cccccc;
+  --neutral-100: #e6e6e6;
+  --neutral-000: #ffffff;
 }
