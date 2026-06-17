@@ -1,49 +1,21 @@
-import '../src/styles/brand.css';
-import '../src/styles/elements/div.css';
-import '../src/styles/elements/a.css';
-import '../src/styles/elements/p.css';
-import '../src/styles/elements/span.css';
-import '../src/styles/elements/hr.css';
-import '../src/styles/elements/h1.css';
-import '../src/styles/elements/h2.css';
-import '../src/styles/elements/h3.css';
-import '../src/styles/elements/button.css';
-import '../src/styles/components/footer.css';
-import '../src/styles/components/header.css';
-import '../src/styles/components/button.css';
-import '../src/styles/index.css';
+import '@/styles/brand.css';
+import '@/styles/elements/div.css';
+import '@/styles/elements/a.css';
+import '@/styles/elements/p.css';
+import '@/styles/elements/span.css';
+import '@/styles/elements/hr.css';
+import '@/styles/elements/h1.css';
+import '@/styles/elements/h2.css';
+import '@/styles/elements/h3.css';
+import '@/styles/elements/button.css';
+import '@/styles/components/footer.css';
+import '@/styles/components/header.css';
+import '@/styles/components/top-navigation.css';
+import '@/styles/components/footer-navigation.css';
+import '@/styles/components/button.css';
+import '@/styles/index.css';
+import '@/scripts/components/top-navigation'
 
-// const industries = [
-//   'Small Businesses',
-//   'Professional Services',
-//   'Consulting Firms',
-//   'Recruitment Agencies',
-//   'Educational Institutions',
-//   'Nonprofits',
-//   'Manufacturing',
-//   'Healthcare Administration',
-//   'Logistics',
-//   'Retail'
-// ]
-
-const productPopover = document.getElementById('products-popover');
-const productPopoverTrigger = document.querySelector('[popovertarget="products-popover"]');
-
-if (!productPopover || !productPopoverTrigger) 
-  console.warn('Failed to show popover for navigation.');
-else {
-  productPopoverTrigger.addEventListener('mouseenter', () => productPopover.showPopover({source: productPopoverTrigger as HTMLElement}));
-
-  productPopoverTrigger.addEventListener('mouseleave', () => {
-    setTimeout(() => {
-      if (!productPopover.matches(':hover')) {
-        productPopover.hidePopover();
-      }
-    }, 100);
-  });
-
-  productPopover.addEventListener('mouseleave', () => productPopover.hidePopover());
-}
 
 const dynamicSlider = document.querySelector('.dynamic-slider') as HTMLElement | null;
 if (!dynamicSlider) 

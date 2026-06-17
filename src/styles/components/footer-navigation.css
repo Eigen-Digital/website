@@ -1,0 +1,86 @@
+footer {
+  background-color: var(--neutral-950);
+  color: var(--neutral-300);
+}
+
+footer > div {
+  width: var(--web-width);
+  padding-block: 50px;
+  margin-inline: auto;
+}
+
+
+footer .company-section {
+  grid-area: f;
+  .description {
+    color: var(--neutral-300);
+    max-width: 40ch;
+    margin-block-start: 5px;
+  }
+
+  .social-handles-section {
+    margin-block-start: 40px;
+  }
+}
+
+footer .nav-section {
+  grid-area: s;
+  justify-self: flex-start;
+  display: flex;
+  gap: 50px;
+}
+
+footer hr {
+  grid-area: l;
+  height: 1px;
+  background-color: var(--neutral-800);
+  margin-block: 40px;
+}
+
+.social-handles-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  a:hover img {
+    filter: invert() brightness(1);
+  }
+
+  img {
+    filter: invert() brightness(0.7);
+  }
+}
+
+.nav-list-header {
+  display: inline-block;
+  color: var(--neutral-000);
+  margin-block-end: 25px;
+  margin-block-start: 10px;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#current-year {
+  display: inline-block;
+  width: 4ch;
+}
+
+@container footer (width <= 550px) {
+  .footer .footer-container {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "f"
+      "s"
+      "l"
+      "b";
+    column-gap: 0;
+  }
+
+  .nav-section {
+    margin-block-start: 40px;
+  }
+}

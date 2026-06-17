@@ -1,11 +1,15 @@
 .button {
+  --outline-color: black;
+  --background-color: white;
+
   display: inline-block;
   padding: 0.5em 1em;
   font-size: 0.875em;
   border-radius: 0.5em;
   box-sizing: border-box;
   font-weight: 500;
-  --outline-color: black;
+  user-select: none;
+  width: fit-content;
 }
 
 .button.primary,
@@ -18,9 +22,16 @@ button.primary {
   }
 }
 
+.button.filled, button.filled {
+  border: none;
+  background-color: var(--background-color);
+  outline-color: var(--outline-color);
+  color: contrast-color(var(--background-color));
+}
+
 .button.outlined, button.outlined {
-    border: 2px solid var(--outline-color);
-    color: var(--outline-color);
+    border: 1px solid var(--outline-color);
+    color: var(--color, var(--outline-color));
 }
 
 
