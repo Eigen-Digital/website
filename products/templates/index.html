@@ -20,6 +20,9 @@
     />
     <script type="module" src="/src/scripts/pages/products/templates.ts"></script>
     <title>Templates - Eigen Digital</title>
+    <style>
+      @layer base, element, component, sub-component, page;
+    </style>
   </head>
   <body>
     <header>
@@ -101,8 +104,7 @@
       <div class="templates-section-container">
         <div class="templates-section grid">
           <div class="template">
-            <!-- todo: go the right template page link -->
-            <a href="#" class="template-link" aria-hidden="true"></a>
+            <a href="./job-application-tracker/" class="template-link" aria-hidden="true"></a>
             <div class="template-preview">
               <img src="/templates/job-application.png" alt="job application thumbnail">
             </div>
@@ -188,13 +190,13 @@
             <div class="nav-list-container">
               <span class="nav-list-header">Products</span>
               <div class="nav-list" role="list">
-                <a href="" role="listitem">Templates</a>
+                <a href="/products/templates/" role="listitem">Templates</a>
               </div>
             </div>
             <div class="nav-list-container">
               <span class="nav-list-header">Company</span>
               <div class="nav-list" role="list">
-                <a href="" role="listitem">Contacts</a>
+                <a href="/company/contacts.html" role="listitem">Contacts</a>
               </div>
             </div>
           </div>

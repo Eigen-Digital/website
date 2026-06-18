@@ -1,3 +1,4 @@
+import '@/styles/brand.css';
 import '@/styles/elements/button.css';
 import '@/styles/elements/span.css';
 import '@/styles/elements/a.css';
@@ -7,10 +8,12 @@ import '@/styles/elements/h3.css';
 import '@/styles/elements/li.css';
 import '@/styles/elements/p.css';
 import '@/styles/elements/ul.css';
+import '@/styles/elements/hr.css';
+import '@/styles/components/header.css';
 import '@/styles/components/button.css';
 import '@/styles/components/footer.css';
-import '@/styles/brand.css';
+import '@/styles/components/grid.css';
+import '@/styles/components/top-navigation.css';
 import '@/styles/pages/products/job-application-tracker/index.css';
 
-
-console.log("I'm ready!")
+import '@/scripts/components/top-navigation';

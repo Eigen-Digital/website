@@ -17,6 +17,9 @@
     />
     <script type="module" src="/src/scripts/pages/company/contacts.ts"></script>
     <title>Contacts - Eigen Digital</title>
+    <style>
+      @layer base, element, component, sub-component, page;
+    </style>
   </head>
   <body>
     <header>
@@ -41,7 +44,7 @@
                   />
                 </svg>
                 <div class="menu-popover" id="products-popover" popover="auto">
-                  <a href="#" class="menu">
+                  <a href="/products/templates/" class="menu">
                     <div class="img-container">
                       <svg
                         width="24"
@@ -295,13 +298,13 @@
             <div class="nav-list-container">
               <span class="nav-list-header">Products</span>
               <div class="nav-list" role="list">
-                <a href="" role="listitem">Templates</a>
+                <a href="/products/templates/" role="listitem">Templates</a>
               </div>
             </div>
             <div class="nav-list-container">
               <span class="nav-list-header">Company</span>
               <div class="nav-list" role="list">
-                <a href="" role="listitem">Contacts</a>
+                <a href="/company/contacts.html" role="listitem">Contacts</a>
               </div>
             </div>
           </div>

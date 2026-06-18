@@ -1,12 +1,14 @@
-.header {
-  container-type: inline-size;
-  container-name: header;
-  box-sizing: border-box;
-  .header-container {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-template-areas: "i m c";
-    column-gap: 20px;
-    align-items: center;
+@layer component {
+  .header {
+    container-type: inline-size;
+    container-name: header;
+    box-sizing: border-box;
+    .header-container {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      grid-template-areas: "i m c";
+      column-gap: 20px;
+      align-items: center;
+    }
   }
 }

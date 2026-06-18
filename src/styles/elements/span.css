@@ -1,7 +1,9 @@
-:where(span) {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@layer element {
+  :where(span) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-  font-size: 0.875rem;
+    font-size: 0.875rem;
+  }
 }

@@ -23,9 +23,79 @@
       src="/src/scripts/pages/products/job-application-tracker/index.ts"
     ></script>
     <title>Job Application Tracker - Eigen Digital</title>
+    <style>
+      @layer base, element, component, sub-component, page;
+    </style>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="header">
+        <div class="header-container">
+          <img
+            width="28"
+            height="28"
+            style="object-fit: contain; object-position: center"
+            src="/eigen-digital-mini.svg"
+            alt="Eigen Digital logo"
+          />
+          <div class="navigation" role="navigation">
+            <div class="nav-list" role="list">
+              <span role="listitem" popovertarget="products-popover"
+                >Products
+                <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4.43057 8.51192C4.70013 8.19743 5.17361 8.161 5.4881 8.43057L12 14.0122L18.5119 8.43057C18.8264 8.16101 19.2999 8.19743 19.5694 8.51192C19.839 8.82642 19.8026 9.29989 19.4881 9.56946L12.4881 15.5695C12.2072 15.8102 11.7928 15.8102 11.5119 15.5695L4.51191 9.56946C4.19742 9.29989 4.161 8.82641 4.43057 8.51192Z"
+                  />
+                </svg>
+                <div class="menu-popover" id="products-popover" popover="auto">
+                  <a href="/products/templates" class="menu">
+                    <div class="img-container">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M20 3H4C3.44772 3 3 3.44772 3 4V9C3 9.55228 3.44772 10 4 10H20C20.5523 10 21 9.55228 21 9V4C21 3.44772 20.5523 3 20 3Z"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11 14H4C3.44772 14 3 14.4477 3 15V20C3 20.5523 3.44772 21 4 21H11C11.5523 21 12 20.5523 12 20V15C12 14.4477 11.5523 14 11 14Z"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M20 14H17C16.4477 14 16 14.4477 16 15V20C16 20.5523 16.4477 21 17 21H20C20.5523 21 21 20.5523 21 20V15C21 14.4477 20.5523 14 20 14Z"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div class="description-container">
+                      <span class="heading">Templates</span>
+                      <span class="subheading"
+                        >Ready-to-use templates for business and personal productivity</span
+                      >
+                    </div>
+                  </a>
+                </div>
+              </span>
+            </div>
+          </div>
+          <div class="cta-container">
+            <a href="" aria-label="Talk to us" class="button primary">Contact us</a>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <div class="hero-section-container">
         <div class="hero-section">
@@ -34,21 +104,22 @@
             <h1>Master Your Job Search. Automate the Grind.</h1>
             <p>
               An Apps Script-powered job application tracker designed to organize your job search,
-              automate follow-ups, and to compare job offers, all without leaving your spreadsheet.
+              automate follow-ups, and to compare job offers.
             </p>
             <div class="cta-section">
-              <a class="button primary" href="">Get the Template</a>
-              <a class="button outlined" href="">View Demo</a>
+              <!-- todo: add the gumroad link -->
+              <a target="_blank" rel="noopener" class="button primary" href="">Get the Template</a>
             </div>
           </div>
           <div class="demo-section">
-            <!-- gif or imga of the template -->
+            <!-- todo: gif or imga of the template -->
           </div>
         </div>
       </div>
       <div class="features-section-container">
+        <h2>Features It Offers</h2>
         <div class="features-section">
-          <div class="feature right">
+          <div class="feature right grid not-self">
             <section>
               <h3>Google Calendar Interview Sync</h3>
               <p>
@@ -60,7 +131,7 @@
               <!-- image or video or canvas goes here -->
             </div>
           </div>
-          <div class="feature left">
+          <div class="feature left grid not-self">
             <section>
               <h3>Smart Next Actions</h3>
               <p>
@@ -72,7 +143,7 @@
               <!-- image or video or canvas goes here -->
             </div>
           </div>
-          <div class="feature right">
+          <div class="feature right grid not-self">
             <section>
               <h3>Timely Follow-Up Sugestions</h3>
               <p>
@@ -84,7 +155,7 @@
               <!-- image or video or canvas goes here -->
             </div>
           </div>
-          <div class="feature left">
+          <div class="feature left grid not-self">
             <section>
               <h3>Side-by-Side Offer Comparison</h3>
               <p>
@@ -97,7 +168,7 @@
               <!-- image or video or canvas goes here -->
             </div>
           </div>
-          <div class="feature right">
+          <div class="feature right grid not-self">
             <section>
               <h3>Centralized Calendar Overview</h3>
               <p>
@@ -110,7 +181,7 @@
               <!-- image or video or canvas goes here -->
             </div>
           </div>
-          <div class="feature left">
+          <div class="feature left grid not-self">
             <section>
               <h3>Tailored Document Tracking</h3>
               <p>
@@ -122,7 +193,7 @@
               <!-- image or video or canvas goes here -->
             </div>
           </div>
-          <div class="feature right">
+          <div class="feature right grid not-self">
             <section>
               <h3>Recruiter / Hiring Manager Log</h3>
               <p>
@@ -135,7 +206,7 @@
               <!-- image or video or canvas goes here -->
             </div>
           </div>
-          <div class="feature left">
+          <div class="feature left grid not-self">
             <section>
               <h3>Application Status Management</h3>
               <p>
@@ -147,7 +218,7 @@
               <!-- image or video or canvas goes here -->
             </div>
           </div>
-          <div class="feature right">
+          <div class="feature right grid">
             <section>
               <h3>Free Future Updates</h3>
               <p>
@@ -223,7 +294,7 @@
             </div>
             <div class="faq">
               <details>
-                <summary>Can I customize the template></summary>
+                <summary>Can I customize the template?</summary>
                 <div>
                   <p>
                     Yes, you can modify fields, statuses, categories, and other parts of the
@@ -300,6 +371,50 @@
           </div>
         </section>
       </div>
+      <div class="services-contact-container">
+        <h2>Need a Support?</h2>
+        <div class="services-contact grid">
+          <div class="contact">
+            <h3>Need Poduct Support?</h3>
+            <p>Reach out for support with setup, feature guidance, updates, or troubleshooting.</p>
+            <a
+              target="_blank"
+              rel="noopener"
+              href="mailto:eigendigital.gh@gmail.com?subject=Product%20Support%20(Job Application Tracker)"
+              class="button filled"
+              >Get Support</a
+            >
+          </div>
+          <div class="contact">
+            <h3>Request a Feature?</h3>
+            <p>
+              Have an idea that could make this template even better? We'd love to hear it.
+            </p>
+            <a
+              target="_blank"
+              rel="noopener"
+              href="mailto:eigendigital.gh@gmail.com?subject=Feature%20Request%20(Job Application Tracker)"
+              class="button filled"
+              >Request Feature</a
+            >
+          </div>
+          <div class="contact">
+            <h3>Having an issue?</h3>
+            <p>
+              Encountered a bug or unexpected issue? Let us know what happened, and we'll
+              investigate it as quickly as possible.
+            </p>
+            <a
+              target="_blank"
+              rel="noopener"
+              href="mailto:eigendigital.gh@gmail.com?subject=Issue%20(Job Application Tracker)"
+              class="button filled"
+              >Report Issue</a
+            >
+          </div>
+          <div></div>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="footer">
@@ -312,9 +427,9 @@
             <span>All rights reserved.</span>
           </div>
           <div class="legal-docs-section">
-            <a href="">Terms and Conditions</a>
-            <a href="">Privacy Policy</a>
-            <a href="">EULA</a>
+            <a href="./terms-and-conditions.html">Terms and Conditions</a>
+            <a href="./privacy-policy.html">Privacy Policy</a>
+            <a href="./eula.html">EULA</a>
           </div>
         </div>
       </div>

@@ -1,3 +1,5 @@
-:where(li) {
-  line-height: 1.5;
+@layer element {
+  :where(li) {
+    line-height: 1.5;
+  }
 }

@@ -1,42 +1,46 @@
-.button {
-  --outline-color: black;
-  --background-color: white;
+@layer component {
+  .button {
+    --outline-color: black;
+    --background-color: white;
 
-  display: inline-block;
-  padding: 0.5em 1em;
-  font-size: 0.875em;
-  border-radius: 0.5em;
-  box-sizing: border-box;
-  font-weight: 500;
-  user-select: none;
-  width: fit-content;
-}
-
-.button.primary,
-button.primary {
-  background-color: var(--primary-color);
-  color: var(--neutral-000);
-
-  &:hover {
-    background-color: color-mix(in srgb, var(--primary-color) 93%, #ffffff);
+    display: inline-block;
+    line-height: 1;
+    padding: 0.5em 1em;
+    font-size: 0.875em;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    font-weight: 500;
+    user-select: none;
+    width: fit-content;
   }
-}
 
-.button.filled, button.filled {
-  border: none;
-  background-color: var(--background-color);
-  outline-color: var(--outline-color);
-  color: contrast-color(var(--background-color));
-}
+  .button.primary,
+  button.primary {
+    background-color: var(--primary-color);
+    color: var(--neutral-000);
 
-.button.outlined, button.outlined {
+    &:hover {
+      background-color: color-mix(in srgb, var(--primary-color) 93%, #ffffff);
+    }
+  }
+
+  .button.filled,
+  button.filled {
+    border: none;
+    background-color: var(--background-color);
+    outline-color: var(--outline-color);
+    color: contrast-color(var(--background-color));
+  }
+
+  .button.outlined,
+  button.outlined {
     border: 1px solid var(--outline-color);
     color: var(--color, var(--outline-color));
-}
+  }
 
-
-@media (prefers-reduced-motion: no-preference) {
-  .button {
-    transition: background-color 200ms ease-in-out;
+  @media (prefers-reduced-motion: no-preference) {
+    .button {
+      transition: background-color 200ms ease-in-out;
+    }
   }
 }

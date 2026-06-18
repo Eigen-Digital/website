@@ -1,5 +1,7 @@
-:where(a) {
-  font-size: 0.875rem;
-  color: unset;
-  text-decoration: none;
+@layer element {
+  :where(a) {
+    font-size: 0.875rem;
+    color: unset;
+    text-decoration: none;
+  }
 }

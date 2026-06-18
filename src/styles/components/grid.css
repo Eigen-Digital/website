@@ -1,51 +1,53 @@
-.grid {
-  --n: 3;
-  --border: 1px solid var(--neutral-800);
-  container-name: grid;
-  display: grid;
-  grid-template-columns: repeat(var(--n), 1fr);
-
-  border: var(--border);
-}
-
-.grid.not-self {
-  border-bottom: none;
-}
-
-@container grid style(--n: 1) {
+@layer component {
   .grid {
-    > :not(:nth-child(1)) {
-      border-top: var(--border);
+    --n: 3;
+    --border: 1px solid var(--neutral-800);
+    container-name: grid;
+    display: grid;
+    grid-template-columns: repeat(var(--n), 1fr);
+
+    border: var(--border);
+  }
+
+  .grid.not-self {
+    border-bottom: none;
+  }
+
+  @container grid style(--n: 1) {
+    .grid {
+      > :not(:nth-child(1)) {
+        border-top: var(--border);
+      }
     }
   }
-}
 
-@container grid style(--n: 2) {
-  .grid {
-    > :nth-child(2n + 1) {
+  @container grid style(--n: 2) {
+    .grid {
+      > :nth-child(2n + 1) {
+        border-right: var(--border);
+      }
+
+      > :not(:nth-child(1), :nth-child(2)) {
+        border-top: var(--border);
+      }
+    }
+  }
+
+  @container grid style(--n: 3) {
+    .grid > :nth-child(2n) {
+      border-left: var(--border);
+      border-right: var(--border);
+    }
+  }
+
+  @container grid style(--n: 4) {
+    .grid > :nth-child(4n + 2) {
+      border-left: var(--border);
       border-right: var(--border);
     }
 
-    > :not(:nth-child(1), :nth-child(2)) {
-      border-top: var(--border);
+    .grid > :nth-child(4n + 4) {
+      border-left: var(--border);
     }
-  }
-}
-
-@container grid style(--n: 3) {
-  .grid > :nth-child(2n) {
-    border-left: var(--border);
-    border-right: var(--border);
-  }
-}
-
-@container grid style(--n: 4) {
-  .grid > :nth-child(4n + 2) {
-    border-left: var(--border);
-    border-right: var(--border);
-  }
-
-  .grid > :nth-child(4n + 4) {
-    border-left: var(--border);
   }
 }

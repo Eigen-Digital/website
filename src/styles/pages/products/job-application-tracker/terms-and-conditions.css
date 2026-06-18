@@ -1,131 +1,133 @@
-body {
-  font-family: var(--primary-font-family);
-  font-optical-sizing: auto;
-  margin: 0;
+@layer page {
+  body {
+    font-family: var(--primary-font-family);
+    font-optical-sizing: auto;
+    margin: 0;
 
-  --web-width: clamp(200px, 90vw, 1100px);
-}
-
-h1,
-h2,
-h3 {
-  font-weight: 400;
-  color: var(--neutral-000);
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  margin-block-end: 10px;
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-h3 {
-  margin-block-end: 5px;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-section:has(> h3) {
-  margin-block-start: 10px;
-}
-
-li {
-  margin-bottom: 8px;
-}
-
-li:last-child {
-  margin-bottom: 0;
-}
-
-footer {
-  background-color: var(--neutral-950);
-  font-size: 0.75em;
-  border-top: 1px solid var(--neutral-800);
-}
-
-footer > div {
-  padding-block: 20px;
-  width: var(--web-width);
-  margin-inline: auto;
-
-  color: var(--neutral-400);
-}
-
-main {
-  background-color: var(--neutral-950);
-}
-
-main > div {
-  width: var(--web-width);
-  margin-inline: auto;
-  padding-block: 20px 60px;
-
-  color: var(--neutral-200);
-}
-
-.metadata-container {
-  padding-block-end: 20px;
-  border-bottom: 1px solid var(--neutral-800);
-}
-
-.intro-container {
-  padding-block-start: 20px;
-}
-
-.sections-container {
-  display: grid;
-  row-gap: 30px;
-  margin-block-start: 30px;
-}
-
-.legal-docs-section {
-  margin-left: auto;
-
-  display: flex;
-  gap: 25px;
-  flex-wrap: nowrap;
-
-  a:hover {
-    color: var(--neutral-100);
+    --web-width: clamp(200px, 90vw, 1100px);
   }
-}
 
-.footer {
-  .footer-container {
-    grid-template-columns: auto auto 1fr;
-    column-gap: 10px;
-    grid-template-areas: none;
+  h1,
+  h2,
+  h3 {
+    font-weight: 400;
+    color: var(--neutral-000);
   }
-}
 
-@container footer (width <= 650px) {
-  .footer .footer-container {
-    grid-template-columns: auto 1fr;
-    row-gap: 10px;
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    margin-block-end: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  h3 {
+    margin-block-end: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  section:has(> h3) {
+    margin-block-start: 10px;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+
+  footer {
+    background-color: var(--neutral-950);
+    font-size: 0.75em;
+    border-top: 1px solid var(--neutral-800);
+  }
+
+  footer > div {
+    padding-block: 20px;
+    width: var(--web-width);
+    margin-inline: auto;
+
+    color: var(--neutral-400);
+  }
+
+  main {
+    background-color: var(--neutral-950);
+  }
+
+  main > div {
+    width: var(--web-width);
+    margin-inline: auto;
+    padding-block: 20px 60px;
+
+    color: var(--neutral-200);
+  }
+
+  .metadata-container {
+    padding-block-end: 20px;
+    border-bottom: 1px solid var(--neutral-800);
+  }
+
+  .intro-container {
+    padding-block-start: 20px;
+  }
+
+  .sections-container {
+    display: grid;
+    row-gap: 30px;
+    margin-block-start: 30px;
   }
 
   .legal-docs-section {
-    grid-column: span 2;
-    margin-left: 0;
+    margin-left: auto;
+
+    display: flex;
+    gap: 25px;
+    flex-wrap: nowrap;
+
+    a:hover {
+      color: var(--neutral-100);
+    }
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .legal-docs-section a {
-    transition: color 200ms ease-in;
+  .footer {
+    .footer-container {
+      grid-template-columns: auto auto 1fr;
+      column-gap: 10px;
+      grid-template-areas: none;
+    }
   }
-}
 
-.bold {
-  font-weight: 500;
-  color: var(--neutral-000);
-}
+  @container footer (width <= 650px) {
+    .footer .footer-container {
+      grid-template-columns: auto 1fr;
+      row-gap: 10px;
+    }
 
-.date-ordinal {
-  font-variant-numeric: ordinal;
-  font-feature-settings: "ordn";
+    .legal-docs-section {
+      grid-column: span 2;
+      margin-left: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .legal-docs-section a {
+      transition: color 200ms ease-in;
+    }
+  }
+
+  .bold {
+    font-weight: 500;
+    color: var(--neutral-000);
+  }
+
+  .date-ordinal {
+    font-variant-numeric: ordinal;
+    font-feature-settings: "ordn";
+  }
 }

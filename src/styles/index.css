@@ -345,22 +345,6 @@ h2 {
   user-select: none;
   margin-top: 60px;
 
-  &::before {
-    --gradient-mask: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 0) 5% 95%,
-      rgba(0, 0, 0, 1)
-    );
-    position: absolute;
-    content: "";
-    inset: 0;
-    background-color: var(--neutral-950);
-    -webkit-mask-image: var(--gradient-mask);
-    mask-image: var(--gradient-mask);
-    z-index: 1;
-  }
-
   .forward,
   .reverse {
     display: flex;
@@ -452,7 +436,8 @@ h2 {
   height: 100cqh;
 
   span {
-    font-size: 76.5cqh;
+    font-size: clamp(20px, 59cqh, 40px);
+    white-space: nowrap;
   }
 }
 

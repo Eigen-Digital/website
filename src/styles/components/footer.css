@@ -1,14 +1,16 @@
-.footer {
-  container-type: inline-size;
-  container-name: footer;
-  box-sizing: border-box;
-  .footer-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-areas:
-      "f s"
-      "l l"
-      "b b";
-    column-gap: 20px;
+@layer component {
+  .footer {
+    container-type: inline-size;
+    container-name: footer;
+    box-sizing: border-box;
+    .footer-container {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-areas:
+        "f s"
+        "l l"
+        "b b";
+      column-gap: 20px;
+    }
   }
 }
