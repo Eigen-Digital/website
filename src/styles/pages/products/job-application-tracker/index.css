@@ -55,6 +55,7 @@
   h3 {
     font-family: var(--secondary-font-family);
     color: var(--neutral-100);
+    font-weight: 500;
   }
 
   .hero-section-container {
@@ -205,6 +206,30 @@
   .feature-preview {
     width: 100%;
     aspect-ratio: 1 / 1;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+    overflow: hidden;
+
+    svg, img {
+      width: 100%;
+    }
+
+    .animate {
+      animation-name: zoomAndSlide;
+      animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+      animation-duration: 7s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: both;
+    }
+
   }
 
   .features-section-container {
@@ -315,4 +340,28 @@
       transition: color 200ms ease-in;
     }
   }
+}
+
+@keyframes zoomAndSlide {
+  0% { transform: translateX(0) translateY(0) scale(1);  }
+  
+  10% { transform: translateX(0) translateY(-50%) scale(2.5);}
+
+  20% { transform: translateX(0) translateY(-50%) scale(2.5);}
+
+  30% { transform: translateX(-66%) translateY(-50%) scale(2.5);}
+
+  40% { transform: translateX(-66%) translateY(-50%) scale(2.5);}
+
+  50% { transform: translateX(-120%) translateY(-50%) scale(2.5);}
+
+  60% { transform: translateX(-120%) translateY(-50%) scale(2.5);}
+
+  70% { transform: translateX(-160%) translateY(-50%) scale(2.5);}
+
+  80% { transform: translateX(-160%) translateY(-50%) scale(2.5);}
+
+  90% { transform: translateX(0) translateY(0) scale(1); }
+  
+  100% { transform: translateX(0) translateY(0) scale(1); }
 }

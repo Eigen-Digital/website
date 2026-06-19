@@ -9,6 +9,7 @@ import '@/styles/elements/li.css';
 import '@/styles/elements/p.css';
 import '@/styles/elements/ul.css';
 import '@/styles/elements/hr.css';
+import '@/styles/elements/div.css';
 import '@/styles/components/header.css';
 import '@/styles/components/button.css';
 import '@/styles/components/footer.css';
