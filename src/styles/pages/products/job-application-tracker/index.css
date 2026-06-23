@@ -60,8 +60,11 @@
 
   .hero-section-container {
     padding-top: 140px;
-    padding-bottom: 70px;
-    background-image: linear-gradient(transparent 50%, purple, rgb(48, 48, 255));
+    padding-bottom: 40px;
+    background-image: linear-gradient(transparent 50%, rgba(127, 105, 255, 0.538), rgb(63, 63, 248));
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
   }
 
   .hero-section {
@@ -140,10 +143,14 @@
   .demo-section {
     aspect-ratio: 16 / 9;
     margin-block-start: 40px;
-    background-color: black;
+    /* background-color: black;
     border: 1px solid var(--neutral-900);
     box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.504);
-    border-radius: 1em;
+    border-radius: 1em; */
+
+    img {
+      width: 100%;
+    }
   }
 
   .cta-section {
