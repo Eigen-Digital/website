@@ -245,7 +245,7 @@ h2 {
   }
 
   .heading {
-    --hovered-color: #0059cee7;
+    --hovered-color: #14b0eee7;
     color: var(--hovered-color);
     opacity: 1;
     transition:

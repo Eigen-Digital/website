@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
+    <link rel="preload" href="/gradient-boxes.webp" fetchpriority="high" as="image" type="image/webp">
     <script type="module" src="./src/main.ts"></script>
     <title>Eigen Digital</title>
     <style>
@@ -34,6 +35,8 @@
             style="object-fit: contain; object-position: center"
             src="/eigen-digital-mini.svg"
             alt="Eigen Digital logo"
+            fetchpriority="high"
+            loading="eager"
           />
           <div class="navigation" role="navigation">
             <div class="nav-list" role="list">
@@ -88,7 +91,7 @@
             </div>
           </div>
           <div class="cta-container">
-            <a href="" aria-label="Talk to us" class="button primary">Contact us</a>
+            <a href="/company/contacts.html" aria-label="Talk to us" class="button primary">Contact us</a>
           </div>
         </div>
       </div>
@@ -103,7 +106,7 @@
               scalable workflows.
             </p>
             <div class="cta-container">
-              <a href="" class="button primary">Discuss Your Project</a>
+              <a href="/company/contacts.html" class="button primary">Discuss Your Project</a>
             </div>
           </div>
           <div class="hero-section-preview">
@@ -112,6 +115,8 @@
               src="/gradient-boxes.webp"
               alt="gradient boxes"
               aria-hidden="false"
+              fetchpriority="high"
+              loading="eager"
             />
           </div>
         </div>
@@ -129,6 +134,7 @@
                     src="/sheets.svg"
                     alt="sheets"
                     aria-hidden="true"
+                    loading="lazy"
                   />
                   <h3>Spreadsheet Solutions</h3>
                   <p>
@@ -150,6 +156,7 @@
                     src="/automation.svg"
                     alt="automation"
                     aria-hidden="true"
+                    loading="lazy"
                   />
                   <h3>Business Automation</h3>
                   <p>
@@ -173,6 +180,7 @@
                     src="/applications.svg"
                     alt="applications"
                     aria-hidden="true"
+                    loading="lazy"
                   />
                   <h3>Custom Applications</h3>
                   <p>Tailored applications built around your business requirements.</p>
@@ -195,6 +203,7 @@
                     src="/systems.svg"
                     alt="systems"
                     aria-hidden="true"
+                    loading="lazy"
                   />
                   <h3>System Integrations</h3>
                   <p>Connect your business tools so information flows automatically.</p>
@@ -216,7 +225,7 @@
                 <div class="text">
                   <h3>
                     <span class="counter">01 </span
-                    ><span class="heading" style="--hovered-color: rgb(181, 53, 53)">Assess</span>
+                    ><span class="heading" style="--hovered-color: rgb(233, 66, 66);">Assess</span>
                   </h3>
                   <p>
                     Understand your business, uncover workflow bottlenecks, and identify high-impact
@@ -245,7 +254,7 @@
                 <div class="text">
                   <h3>
                     <span class="counter">03 </span
-                    ><span class="heading" style="--hovered-color: rgb(223, 13, 223)">Deploy</span>
+                    ><span class="heading" style="--hovered-color: rgb(223, 13, 223);">Deploy</span>
                   </h3>
                   <p>
                     Deploy your solution seamlessly with minimal disruption, ensuring a smooth
@@ -261,7 +270,7 @@
                 <div class="text">
                   <h3>
                     <span class="counter">04 </span
-                    ><span class="heading" style="--hovered-color: rgb(39, 179, 39)">Optimize</span>
+                    ><span class="heading" style="--hovered-color: rgb(39, 179, 39);">Optimize</span>
                   </h3>
                   <p>
                     Continuously refine and optimize your systems to adapt to evolving business
@@ -1344,6 +1353,7 @@
               height="74.67px"
               src="/eigen-digital-full-logo-white.svg"
               alt="Eigen Digital logo"
+              loading="lazy"
             />
             <p class="description">
               Powering businesses through automated systems and digital architecture.
@@ -1361,6 +1371,7 @@
                   src="/linkedin-logo.svg"
                   alt="LinkedIn logo"
                   aria-hidden="true"
+                  loading="lazy"
               /></a>
               <a
                 role="listitem"
@@ -1374,6 +1385,7 @@
                   src="/instagram-logo.svg"
                   alt="Instagram logo"
                   aria-hidden="true"
+                  loading="lazy"
               /></a>
               <a
                 role="listitem"
@@ -1387,6 +1399,7 @@
                   src="/twitter-logo.svg"
                   alt="X logo"
                   aria-hidden="true"
+                  loading="lazy"
               /></a>
               <a
                 role="listitem"
@@ -1400,6 +1413,7 @@
                   src="/youtube-logo.svg"
                   alt="YouTube logo"
                   aria-hidden="true"
+                  loading="lazy"
               /></a>
             </div>
           </div>

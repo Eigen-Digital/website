@@ -18,11 +18,18 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="preload"
+      as="image"
+      type="image/png"
+      fetchpriority="high"
+      href="/job-application-tracker-cover.png"
+    />
     <script
       type="module"
       src="/src/scripts/pages/products/job-application-tracker/index.ts"
     ></script>
-    <title>Job Application Tracker - Eigen Digital</title>
+    <title>Job Application Tracker</title>
     <style>
       @layer base, element, component, sub-component, page;
     </style>
@@ -112,7 +119,13 @@
             </div>
           </div>
           <div class="demo-section">
-            <img src="/job-application-tracker-cover.png" alt="job application-tracker" aria-hidden="true">
+            <img
+              src="/job-application-tracker-cover.png"
+              fetchpriority="high"
+              loading="eager"
+              alt="job application-tracker"
+              aria-hidden="true"
+            />
           </div>
         </div>
       </div>
@@ -159,7 +172,6 @@
               />
             </div>
           </div>
-          
           <div class="feature right grid not-self">
             <section>
               <h3>Side-by-Side Offer Comparison</h3>
@@ -179,7 +191,7 @@
                 aria-hidden="true"
                 loading="lazy"
                 class="animate"
-                style="transform-origin: top left;"
+                style="transform-origin: top left"
               />
             </div>
           </div>
@@ -222,7 +234,7 @@
                 aria-hidden="true"
                 loading="lazy"
                 class="animate"
-                style="transform-origin: top left; animation-delay: 1s;"
+                style="transform-origin: top left; animation-delay: 1s"
               />
             </div>
           </div>
@@ -265,7 +277,7 @@
                 aria-hidden="true"
                 loading="lazy"
                 class="animate"
-                style="transform-origin: top left; animation-delay: 2s;"
+                style="transform-origin: top left; animation-delay: 2s"
               />
             </div>
           </div>
@@ -435,16 +447,16 @@
                     Yes. Your purchase includes access to bug fixed, performance improvements, and
                     minor feature enhancements released for your ersion of the template.
                   </p>
-                  <br>
+                  <br />
                   <p>
                     Major upgrades that significantly redesign the template, introduce a new
                     architecture, or constitue a substantially new products may be released as
                     separate versions and many require an additional purchase.
                   </p>
-                  <br>
+                  <br />
                   <p>
-                    Whereever possible, existing customer will be notified about important updates and
-                    upgrade options.
+                    Whereever possible, existing customer will be notified about important updates
+                    and upgrade options.
                   </p>
                 </div>
               </details>
@@ -461,18 +473,20 @@
             <a
               target="_blank"
               rel="noopener"
-              href="mailto:eigendigital.gh@gmail.com?subject=Product%20Support%20(Job Application Tracker)"
+              href="mailto:support@eigendigital.co?subject=Product%20Support%20(Job%20Application%20Tracker)"
               class="button filled"
               >Get Support</a
             >
           </div>
           <div class="contact">
             <h3>Request a Feature?</h3>
-            <p>Have an idea that could make this template even better? <br>We'd love to hear it.</p>
+            <p>
+              Have an idea that could make this template even better? <br />We'd love to hear it.
+            </p>
             <a
               target="_blank"
               rel="noopener"
-              href="mailto:eigendigital.gh@gmail.com?subject=Feature%20Request%20(Job Application Tracker)"
+              href="mailto:product@eigendigital.co?subject=Feature%20Request%20(Job Application Tracker)"
               class="button filled"
               >Request Feature</a
             >
@@ -486,7 +500,7 @@
             <a
               target="_blank"
               rel="noopener"
-              href="mailto:eigendigital.gh@gmail.com?subject=Issue%20(Job Application Tracker)"
+              href="mailto:support@eigendigital.co?subject=Issue%20(Job Application Tracker)"
               class="button filled"
               >Report Issue</a
             >
@@ -499,7 +513,13 @@
       <div class="footer">
         <div class="footer-container">
           <div class="company-section">
-            <img width="25" height="17.14" src="/eigen-digital-mini.svg" alt="Eigen Digital logo" />
+            <img
+              width="25"
+              height="17.14"
+              loading="lazy"
+              src="/eigen-digital-mini.svg"
+              alt="Eigen Digital logo"
+            />
           </div>
           <div class="copyright-section">
             <span>&copy; </span><span id="current-year"></span> <span>Eigen Digital</span>.

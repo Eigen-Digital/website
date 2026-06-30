@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
+    <link rel="preload" href="/templates/job-application.png" as="image" type="image/png" fetchpriority="high">
     <script type="module" src="/src/scripts/pages/products/templates.ts"></script>
     <title>Templates - Eigen Digital</title>
     <style>
@@ -34,6 +35,8 @@
             style="object-fit: contain; object-position: center"
             src="/eigen-digital-mini.svg"
             alt="Eigen Digital logo"
+            fetchpriority="high"
+            loading="eager"
           />
           <div class="navigation" role="navigation">
             <div class="nav-list" role="list">
@@ -88,7 +91,9 @@
             </div>
           </div>
           <div class="cta-container">
-            <a href="" aria-label="Talk to us" class="button primary">Contact us</a>
+            <a href="/company/contacts.html" aria-label="Talk to us" class="button primary"
+              >Contact us</a
+            >
           </div>
         </div>
       </div>
@@ -104,16 +109,32 @@
       <div class="templates-section-container">
         <div class="templates-section grid">
           <div class="template">
-            <a href="./job-application-tracker/" class="template-link" aria-hidden="true"></a>
+            <a
+              href="./job-application-tracker/"
+              class="template-link"
+              aria-label="Get more details about the job application tracker"
+            >
+            </a>
             <div class="template-preview">
-              <img src="/templates/job-application.png" alt="job application thumbnail">
+              <img
+                src="/templates/job-application.png"
+                loading="lazy"
+                alt="job application thumbnail"
+              />
             </div>
             <div class="description">
               <span class="heading">Job Application Tracker</span>
-              <p class="subheading">Track applications, interviews, and follow-ups in one organized system.</p>
+              <p class="subheading">
+                Track applications, interviews, and follow-ups in one organized system.
+              </p>
             </div>
-            <!-- todo: gumroad or esty link -->
-            <a href="" class="button">Get Template</a>
+            <a
+              href="https://eigendigital.gumroad.com/l/job-application-tracker-v1"
+              rel="noopener"
+              target="_blank"
+              class="button"
+              >Get Template</a
+            >
           </div>
         </div>
       </div>
@@ -127,6 +148,7 @@
               height="74.67px"
               src="/eigen-digital-full-logo-white.svg"
               alt="Eigen Digital logo"
+              loading="lazy"
             />
             <p class="description">
               Powering businesses through automated systems and digital architecture.
@@ -144,6 +166,7 @@
                   src="/linkedin-logo.svg"
                   alt="LinkedIn logo"
                   aria-hidden="true"
+                  loading="lazy"
               /></a>
               <a
                 role="listitem"
@@ -157,6 +180,7 @@
                   src="/instagram-logo.svg"
                   alt="Instagram logo"
                   aria-hidden="true"
+                  loading="lazy"
               /></a>
               <a
                 role="listitem"
@@ -170,6 +194,7 @@
                   src="/twitter-logo.svg"
                   alt="X logo"
                   aria-hidden="true"
+                  loading="lazy"
               /></a>
               <a
                 role="listitem"
@@ -183,6 +208,7 @@
                   src="/youtube-logo.svg"
                   alt="YouTube logo"
                   aria-hidden="true"
+                  loading="lazy"
               /></a>
             </div>
           </div>
@@ -208,5 +234,11 @@
         </div>
       </div>
     </footer>
+    <script>
+      const currentYearSpan = document.getElementById("current-year");
+
+      if (!currentYearSpan) console.warn("Current year display for copyright not found.");
+      currentYearSpan.textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
