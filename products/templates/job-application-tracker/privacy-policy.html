@@ -100,41 +100,130 @@
                 and custom menu interfaces). To function, the script requires you to grant specific
                 Google account permissions (OAuth scopes).
               </p>
+              <br />
               <p>
                 When you authorize the script, you are granting the script access to perform actions
                 strictly within your own Google Account. The specific permissions required are:
               </p>
 
-              <ul>
-                <li>
-                  <span class="bold"
-                    >See, edit, create, and delete all your Google Sheets spreadsheets: </span
-                  >Required to read and write your job application data within the template.
-                </li>
-                <li>
-                  <span class="bold"
+              <div class="permissions-container">
+                <div class="permission">
+                  <span class="bold heading">Google Sheets</span>
+                  <span class="bold subheading"
+                    >See, edit, create, and delete all your Google Sheets spreadsheets.</span
+                  >
+                  <p>This permisson allows the product to:</p>
+                  <ul>
+                    <li>
+                      <span class="bold">Create</span>, <span class="bold">read</span>,
+                      <span class="bold">update</span>, and <span class="bold">delete</span> job
+                      application records.
+                    </li>
+                    <li>
+                      <b>Insert</b> generated values such as <b>Job ID</b> and
+                      <b>job creation timestamp</b> into designated cells within the spreadsheet.
+                    </li>
+                    <li>
+                      <b>Clear</b> content such as <b>applications</b>, <b>companies</b>, and
+                      <b>contacts</b> when you explicitly choose to reset the product.
+                    </li>
+                  </ul>
+                </div>
+                <div class="permission">
+                  <span class="bold heading">Google Calendar</span>
+                  <span class="bold subheading"
                     >See, edit, share, and permanently delete all the calendars you can access using
-                    Google Calendar: </span
-                  >Required to automate the creation of interview events or reminders.
-                </li>
-                <li>
-                  <span class="bold">Connect to ScriptApp service:</span> Required to run the
-                  background automation triggers.
-                </li>
-                <li>
-                  <span class="bold"
+                    Google Calendar.</span
+                  >
+                  <p>
+                    This permisson is required only if you enable calendar synchronization. It
+                    allows the product to:
+                  </p>
+                  <ul>
+                    <li>
+                      <span class="bold">Create</span> interview events in a dedicated
+                      <b>JAT</b> calendar.
+                    </li>
+                    <li>
+                      <b>Update</b> interview titles, dates, and times when changes are made within
+                      the spreadsheet.
+                    </li>
+                    <li>
+                      <b>Delete</b> interview events when they are deleted from the application to
+                      synchronization is disabled.
+                    </li>
+                    <li>
+                      Keep your interview schedule synchronized between the spreadsheet and Google
+                      Calendar.
+                    </li>
+                  </ul>
+                  <p>
+                    The application <b>does not modify</b> unrelated calendar events or calendars
+                    that are not associated with Job Application Tracker.
+                  </p>
+                </div>
+                <div class="permission">
+                  <span class="bold heading">Google ScriptApp</span>
+                  <span class="bold subheading"
+                    >Allow this application to run when you are not present.</span
+                  >
+                  <p>
+                    This permission allows the application to install and manage Google Apps Script
+                    triggers required for automation.
+                    <br />
+                    These triggers are used to:
+                  </p>
+                  <ul>
+                    <li>
+                      <span class="bold">Initialize</span> the product interface whenever you open
+                      the spreadsheet.
+                    </li>
+                    <li>
+                      Automatically synchronize interview event with Google Calendar on a scheduled
+                      bases.
+                    </li>
+                  </ul>
+                </div>
+                <div class="permission">
+                  <span class="bold heading">Google Sheets UI</span>
+                  <span class="bold subheading"
                     >Display and run third-party web content in prompts and sidebars inside Google
-                    applications (Spreadsheet UI): </span
-                  >Required to display custom dialogs and interactive menus.
-                </li>
-                <li>
-                  <span class="bold"
-                    >Access limited session information provided by Google to identify the active
-                    user: </span
-                  >Required for personalized user experience, verification and providing technical support.
-                </li>
-              </ul>
-
+                    applications.</span
+                  >
+                  <p>
+                    This permission allows the application to display custom user interface
+                    components within Google Sheets, including:
+                  </p>
+                  <ul>
+                    <li><b>Custom menus</b> that extends the product funtionality.</li>
+                    <li>
+                      <b>Dialog windows</b> to prompt users for confirmation when resetting the
+                      product.
+                    </li>
+                    <li>
+                      <b>Informational dialog</b> that shows more about the producy and help
+                      documentation.
+                    </li>
+                  </ul>
+                </div>
+                <div class="permission">
+                  <span class="bold heading">Google Drive</span> <span>(Read-only)</span>
+                  <span class="bold subheading">See and download all your Google Drive files.</span>
+                  <p>
+                    This permission is not used to access your personal Google Drive files. Instead,
+                    it is used solely to read a single application-managed metadata file
+                    <b>(version.json)</b> that is stored in <b>our Google Drive</b>. This file
+                    contains:
+                  </p>
+                  <ul>
+                    <li>The latest template version number</li>
+                    <li>Update notifications</li>
+                    <li>Release notes</li>
+                    <li>Application configuration and metadata required for version checking</li>
+                  </ul>
+                </div>
+              </div>
+              
               <p>
                 We do not <span class="bold">sell</span>, <span class="bold">rent</span>, or
                 <span class="bold">share</span> user information with third parties for advertising
@@ -159,16 +248,17 @@
             <h2>4. Purchase Verification</h2>
             <div>
               <p>
-                To activate or verify your license for the Job Application Tracker, you may be required to submit a verification form.
+                To activate or verify your license for the Job Application Tracker, you may be
+                required to submit a verification form.
               </p>
-              <br>
+              <br />
               <p>Depending on the verification process, we may collect:</p>
               <ul>
                 <li>Your Name</li>
                 <li>Email Address (Google Account)</li>
                 <li>The order ID or license key</li>
               </ul>
-              <br>
+              <br />
               <p>We use this information solely to:</p>
               <ul>
                 <li>Verify that you have purchased a legitimate copy of the product</li>
@@ -176,7 +266,11 @@
                 <li>Prevent unauthorized distribution and piracy</li>
                 <li>Provide customer support</li>
               </ul>
-              <p>We do not sell, rent, or disclose this information to third parties except where required to process purchases, comply with legal obligations, or provide requested services.</p>
+              <p>
+                We do not sell, rent, or disclose this information to third parties except where
+                required to process purchases, comply with legal obligations, or provide requested
+                services.
+              </p>
             </div>
           </section>
           <section>

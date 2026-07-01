@@ -8,6 +8,20 @@
     --web-width: clamp(200px, 90vw, 1100px);
   }
 
+  p {
+    font-size: clamp(0.875rem, 5vw, 1rem);
+    color: var(--neutral-300);
+  }
+
+  span {
+    color: var(--neutral-300);
+  }
+
+  b {
+    font-weight: 500;
+    color: var(--neutral-100);
+  }
+
   footer {
     background-color: var(--neutral-950);
     font-size: 0.75em;
@@ -47,7 +61,7 @@
   h2 {
     font-family: var(--secondary-font-family);
     font-size: clamp(1.8rem, 5vw, 2.8rem);
-    max-width: 15ch;
+    max-width: 18ch;
     font-weight: 500;
     color: var(--neutral-100);
   }
@@ -61,7 +75,11 @@
   .hero-section-container {
     padding-top: 140px;
     padding-bottom: 40px;
-    background-image: linear-gradient(transparent 50%, rgba(127, 105, 255, 0.538), rgb(63, 63, 248));
+    background-image: linear-gradient(
+      transparent 50%,
+      rgba(127, 105, 255, 0.538),
+      rgb(63, 63, 248)
+    );
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 100% 60%;
@@ -73,52 +91,66 @@
     margin-inline: auto;
 
     p {
-      font-size: clamp(0.875rem, 3vw, 1rem);
       max-width: 60ch;
       margin-inline: auto;
       margin-block-start: 5px;
-      color: var(--neutral-400);
     }
   }
 
-  .faq-section-container {
+  .faq-section-container, .google-data-access-section-container {
     container-type: inline-size;
-    container-name: faq-section;
+    container-name: expandable-section;
   }
 
-  .faq-section {
+  .faq-section,
+  .google-data-access-section {
     width: var(--web-width);
     margin-inline: auto;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
 
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 50px;
   }
 
-  .faq {
-    &:not(:first-of-type) {
-      border-top: 1px solid var(--neutral-800);
-    }
-
-    summary:hover {
-      color: rgb(159, 159, 255);
-      cursor: pointer;
-
-      &::before {
-        color: inherit;
-      }
+  .google-data-access-section {
+    h2 {
+      margin-block-end: 20px;
     }
 
     p {
-      font-size: clamp(0.875rem, 5vw, 0.925rem);
-      color: var(--neutral-300);
       max-width: 55ch;
     }
   }
 
+  summary:hover {
+    color: rgb(159, 159, 255);
+    cursor: pointer;
+
+    &::before {
+      color: inherit;
+    }
+  }
+
+  .faq:not(:first-of-type),
+  .data-access:not(:first-of-type) {
+    border-top: 1px solid var(--neutral-800);
+  }
+
+  .data-access-scope {
+    display: inline-block;
+    margin-block-end: 20px;
+  }
+
+  .data-access-tag {
+    color: var(--neutral-100);
+    background-color: var(--neutral-700);
+    padding: 0.25em 1em;
+    border-radius: 1000px;
+  }
+
   summary {
-    font-size: clamp(0.875rem, 5vw, 0.925rem);
+    font-size: clamp(0.975rem, 5vw, 1rem);
     padding-block: 15px;
     list-style: none;
     line-height: 1.2;
@@ -130,6 +162,11 @@
       color: var(--neutral-400);
       margin-right: 8px;
     }
+  }
+
+  details p {
+    font-size: clamp(0.875rem, 5vw, 0.925rem);
+    max-width: 55ch;
   }
 
   details[open] summary::before {
@@ -168,8 +205,6 @@
     }
 
     p {
-      font-size: clamp(0.875rem, 5vw, 1rem);
-      color: var(--neutral-400);
       margin-block-start: 10px;
       max-width: 45ch;
     }
@@ -225,7 +260,8 @@
     padding: 30px;
     overflow: hidden;
 
-    svg, img {
+    svg,
+    img {
       width: 100%;
     }
 
@@ -236,7 +272,6 @@
       animation-iteration-count: infinite;
       animation-fill-mode: both;
     }
-
   }
 
   .features-section-container {
@@ -283,7 +318,6 @@
 
     p {
       margin-block-start: 10px;
-      color: var(--neutral-300);
     }
 
     h3 {
@@ -312,7 +346,7 @@
   @container footer (width <= 650px) {
     .footer .footer-container {
       grid-template-columns: auto 1fr;
-      row-gap: 10px;
+      row-gap: 20px;
     }
 
     .legal-docs-section {
@@ -321,8 +355,8 @@
     }
   }
 
-  @container faq-section (width <= 920px) {
-    .faq-section {
+  @container expandable-section (width <= 920px) {
+    .faq-section, .google-data-access-section {
       grid-template-columns: auto;
     }
   }
@@ -350,25 +384,47 @@
 }
 
 @keyframes zoomAndSlide {
-  0% { transform: translateX(0) translateY(0) scale(1);  }
-  
-  10% { transform: translateX(0) translateY(-50%) scale(2.5);}
+  0% {
+    transform: translateX(0) translateY(0) scale(1);
+  }
 
-  20% { transform: translateX(0) translateY(-50%) scale(2.5);}
+  10% {
+    transform: translateX(0) translateY(-50%) scale(2.5);
+  }
 
-  30% { transform: translateX(-66%) translateY(-50%) scale(2.5);}
+  20% {
+    transform: translateX(0) translateY(-50%) scale(2.5);
+  }
 
-  40% { transform: translateX(-66%) translateY(-50%) scale(2.5);}
+  30% {
+    transform: translateX(-66%) translateY(-50%) scale(2.5);
+  }
 
-  50% { transform: translateX(-120%) translateY(-50%) scale(2.5);}
+  40% {
+    transform: translateX(-66%) translateY(-50%) scale(2.5);
+  }
 
-  60% { transform: translateX(-120%) translateY(-50%) scale(2.5);}
+  50% {
+    transform: translateX(-120%) translateY(-50%) scale(2.5);
+  }
 
-  70% { transform: translateX(-160%) translateY(-50%) scale(2.5);}
+  60% {
+    transform: translateX(-120%) translateY(-50%) scale(2.5);
+  }
 
-  80% { transform: translateX(-160%) translateY(-50%) scale(2.5);}
+  70% {
+    transform: translateX(-160%) translateY(-50%) scale(2.5);
+  }
 
-  90% { transform: translateX(0) translateY(0) scale(1); }
-  
-  100% { transform: translateX(0) translateY(0) scale(1); }
+  80% {
+    transform: translateX(-160%) translateY(-50%) scale(2.5);
+  }
+
+  90% {
+    transform: translateX(0) translateY(0) scale(1);
+  }
+
+  100% {
+    transform: translateX(0) translateY(0) scale(1);
+  }
 }

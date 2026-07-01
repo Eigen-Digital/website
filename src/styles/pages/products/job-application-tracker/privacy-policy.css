@@ -4,7 +4,11 @@
     font-optical-sizing: auto;
     margin: 0;
 
-    --web-width: clamp(200px, 90vw, 1100px);
+    --web-width: clamp(200px, 90vw, 900px);
+  }
+
+  p {
+    line-height: 1.65;
   }
 
   h1,
@@ -25,9 +29,8 @@
   }
 
   h3 {
-    margin-block-end: 5px;
+    margin-block-end: 10px;
     font-size: 1rem;
-    font-weight: 500;
   }
 
   section:has(> h3) {
@@ -40,6 +43,10 @@
 
   li:last-child {
     margin-bottom: 0;
+  }
+
+  ul li {
+    list-style-type: disc;
   }
 
   footer {
@@ -65,7 +72,7 @@
     margin-inline: auto;
     padding-block: 20px 60px;
 
-    color: var(--neutral-200);
+    color: var(--neutral-100);
   }
 
   .metadata-container {
@@ -121,9 +128,33 @@
     }
   }
 
-  .bold {
+  .bold, b {
     font-weight: 500;
     color: var(--neutral-000);
+  }
+
+  .permissions-container {
+    margin-top: 20px;
+
+    display: grid;
+    row-gap: 35px;
+  }
+
+  .permission {
+    .heading {
+      font-size: 1rem;
+    }
+
+    .subheading {
+      display: block;
+      margin-block-start: 5px;
+      color: var(--neutral-300);
+      font-weight: 400;
+    }
+
+    p {
+      margin-block-start: 20px;
+    }
   }
 
   .date-ordinal {

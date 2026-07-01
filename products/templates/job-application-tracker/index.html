@@ -98,7 +98,7 @@
             </div>
           </div>
           <div class="cta-container">
-            <a href="" aria-label="Talk to us" class="button primary">Contact us</a>
+            <a href="/company/contacts.html" rel="noopener" target="_blank" aria-label="Talk to us" class="button primary">Contact us</a>
           </div>
         </div>
       </div>
@@ -322,6 +322,133 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="google-data-access-section-container">
+        <section class="google-data-access-section">
+          <div>
+            <h2>Google OAuth Permissions and Data Access</h2>
+            <p>
+              The <b>Job Application Tracker</b> acts as a local productivity tool inside your
+              Google Workspace ecosystem. To provide seamless functionality such as syncing
+              interviews to your calendar and updating your dashboard, the application requires
+              specific permission to access your data.
+            </p>
+            <br />
+            <p>
+              We <b>do not store, track, or transmit</b> your personal information or spreadsheet
+              contents to any external servers.
+            </p>
+            <br />
+            <p>
+              Here is a transparent breakdown of exactly why each permission is requested and how it
+              is used:
+            </p>
+          </div>
+          <div>
+            <div class="data-access">
+              <details>
+                <summary>Google Sheets</summary>
+                <div>
+                  <span class="data-access-scope"
+                    >Scope:
+                    <span class="data-access-tag"
+                      >https://www.googleapis.com/auth/spreadsheets</span
+                    ></span
+                  >
+                  <p>
+                    The application uses this scope manage the information you enter into your Job
+                    Application Tracker. This includes creating, reading, updating, and deleting
+                    records such as job applications, companies, contacts, interview details, and
+                    application statuses.
+                    <br /><br />
+                    The application also generates supporting information, such as job IDs and
+                    timestamps, and can clear application data when you choose to reset the tracker.
+                  </p>
+                </div>
+              </details>
+            </div>
+            <div class="data-access">
+              <details>
+                <summary>Google Calendar</summary>
+                <div>
+                  <span class="data-access-scope"
+                    >Scope:
+                    <span class="data-access-tag"
+                      >https://www.googleapis.com/auth/calendar</span
+                    ></span
+                  >
+                  <p>
+                    If you enable calendar synchronization, the application creates and manages
+                    interview events in a dedicated <b>JAT Google Calendar</b>. This helps you keep
+                    interviews, follow-ups, and other job-related events synchronized with your
+                    Google Calendar.
+                  </p>
+                </div>
+              </details>
+            </div>
+            <div class="data-access">
+              <details>
+                <summary>Google ScriptApp</summary>
+                <div>
+                  <span class="data-access-scope"
+                    >Scope:
+                    <span class="data-access-tag"
+                      >https://www.googleapis.com/auth/script.scriptapp</span
+                    ></span
+                  >
+                  <p>
+                    The application uses Google Apps Script to automate routine tasks. This includes
+                    creating an <b>onOpen trigger</b> to initialize the spreadsheet interface
+                    whenever you open it and an <b>hourly trigger</b> to keep your Google Calendar
+                    synchronized automatically when calendar sync is enabled.
+                  </p>
+                </div>
+              </details>
+            </div>
+            <div class="data-access">
+              <details>
+                <summary>Google Sheets UI</summary>
+                <div>
+                  <span class="data-access-scope"
+                    >Scope:
+                    <span class="data-access-tag"
+                      >https://www.googleapis.com/auth/script.container.ui</span
+                    ></span
+                  >
+                  <p>
+                    The application customizes the Google Sheets interface by adding menus and
+                    dialogs. These components provide access to application features, confirmation
+                    prompts for actions such as resetting data, and informational pages including
+                    the <b>About</b> dialog, <b>End User License Agreement (EULA)</b>, and other
+                    help content.
+                  </p>
+                </div>
+              </details>
+            </div>
+            <div class="data-access">
+              <details>
+                <summary>Google Drive <span class="summary-tag">(Read-only)</span></summary>
+                <div>
+                  <span class="data-access-scope"
+                    >Scope:
+                    <span class="data-access-tag"
+                      >https://www.googleapis.com/auth/drive.readonly</span
+                    ></span
+                  >
+                  <p>
+                    The application requests <b>read-only access</b> to Google Drive solely to read
+                    a single application-managed metadata file <b>(version.json)</b> that is stored in our
+                    Google Drive, <b>not the users</b>. 
+                    <br>
+                    This file contains the latest template version, update
+                    messages, release notes, and other metadata used to determine whether a newer
+                    version of the template is available.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </section>
       </div>
       <div class="faq-section-container">
         <section class="faq-section">
