@@ -48,6 +48,22 @@
   }
 
   h1 {
+    color: var(--neutral-200);
+    font-weight: 400;
+    font-family: var(--secondary-font-family);
+    font-size: clamp(0.975rem, 4vw, 1rem);
+    padding: 0.25em 1em;
+    width: fit-content;
+    margin-inline: auto;
+    text-align: center;
+    border: 2px solid var(--neutral-800);
+    border-radius: 1000px;
+    background-color: var(--neutral-900);
+    margin-block-end: 10px;
+  }
+
+  .h1 {
+    display: block;
     font-family: var(--secondary-font-family);
     font-weight: 500;
     font-size: clamp(2rem, 5vw, 3rem);
@@ -56,6 +72,9 @@
     max-width: 20ch;
     margin-inline: auto;
     color: var(--neutral-100);
+
+    box-sizing: border-box;
+    text-wrap: balance;
   }
 
   h2 {
