@@ -51,7 +51,7 @@
                 Google account, it operates primarily within your Google Workspace environment.
                 However, to power its advanced features, maintain code integrity and fixes any
                 reported bugs, the template's embedded Google Apps Script communicates with
-                <span class="bold">JAT</span>, a secure editor add-on managed by
+                <span class="bold">the Eigen Digital Tracker (JAT)</span>, a secure editor add-on managed by
                 <span class="bold">Eigen Digital</span>. All information you input—including job
                 roles, offer tracking details, contacts, and personal notes—remains strictly within
                 your own Google account and is subject to Google's Privacy Policy.
@@ -105,9 +105,9 @@
 
               <div class="permissions-container">
                 <div class="permission">
-                  <span class="bold heading">Google Sheets</span>
+                  <span class="bold heading">Google Sheets</span> <span>(currentonly)</span>
                   <span class="bold subheading"
-                    >See, edit, create, and delete all your Google Sheets spreadsheets.</span
+                    >View and manage spreadsheets that this application has been installed in.</span
                   >
                   <p>This permisson allows the product to:</p>
                   <ul>
@@ -201,6 +201,19 @@
                       <b>Informational dialog</b> that shows more about the producy and help
                       documentation.
                     </li>
+                  </ul>
+                </div>
+                <div class="permission">
+                  <span class="bold heading">External Service Request</span>
+                  <span class="bold subheading"
+                    >Connect to an external service.</span
+                  >
+                  <p>
+                    This permission allows the application to send external request to the <b>Eigen Digital's License Verification Service</b> with the following data:
+                  </p>
+                  <ul>
+                    <li>User's email address to verify license.</li>
+                    <li>The application receives only the license verification result to enable features; no Google Sheets or Google Calendar data is transmitted through this request.</li>
                   </ul>
                 </div>
               </div>  
