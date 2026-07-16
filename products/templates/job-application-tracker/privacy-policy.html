@@ -51,25 +51,28 @@
                 Google account, it operates primarily within your Google Workspace environment.
                 However, to power its advanced features, maintain code integrity and fixes any
                 reported bugs, the template's embedded Google Apps Script communicates with
-                <span class="bold">the Eigen Digital Tracker (JAT)</span>, a secure editor add-on managed by
-                <span class="bold">Eigen Digital</span>. All information you input—including job
-                roles, offer tracking details, contacts, and personal notes—remains strictly within
-                your own Google account and is subject to Google's Privacy Policy.
+                <span class="bold">the Eigen Digital Tracker (JAT)</span>, a secure editor add-on
+                managed by <span class="bold">Eigen Digital</span>. All information you
+                input—including job roles, offer tracking details, contacts, and personal
+                notes—remains strictly within your own Google account and is subject to Google's
+                Privacy Policy.
               </p>
 
               <section>
                 <h3>1.1 JAT Editor Add-on</h3>
                 <div>
                   <p>
-                    The template's embedded Google Apps Script securely interacts with JAT, as an installed editor add-on managed by Eigen Digital.
+                    The template's embedded Google Apps Script securely interacts with JAT, as an
+                    installed editor add-on managed by Eigen Digital.
                   </p>
                   <ul>
                     <li>
                       <span class="bold">Stateless Processing (No Storage):</span> When you execute
-                      a custom function or menu item, the JAT add-on uses the necessary Google services to run the requested logic. It does not collect,
-                      store, log, or retain any of your personal information, email addresses, or
-                      spreadsheet data. Once the function is executed and the result is sent back to
-                      your Google Sheet, the data is instantly dropped from memory.
+                      a custom function or menu item, the JAT add-on uses the necessary Google
+                      services to run the requested logic. It does not collect, store, log, or
+                      retain any of your personal information, email addresses, or spreadsheet data.
+                      Once the function is executed and the result is sent back to your Google
+                      Sheet, the data is instantly dropped from memory.
                     </li>
                     <li>
                       <span class="bold">Google Permissions: </span>
@@ -205,18 +208,21 @@
                 </div>
                 <div class="permission">
                   <span class="bold heading">External Service Request</span>
-                  <span class="bold subheading"
-                    >Connect to an external service.</span
-                  >
+                  <span class="bold subheading">Connect to an external service.</span>
                   <p>
-                    This permission allows the application to send external request to the <b>Eigen Digital's License Verification Service</b> with the following data:
+                    This permission allows the application to send external request to the
+                    <b>Eigen Digital's License Verification Service</b> over encrypted HTTPS/TLS connections with the following data:
                   </p>
                   <ul>
                     <li>User's email address to verify license.</li>
-                    <li>The application receives only the license verification result to enable features; no Google Sheets or Google Calendar data is transmitted through this request.</li>
+                    <li>
+                      The application receives only the license verification result to enable
+                      features; no Google Sheets or Google Calendar data is transmitted through this
+                      request. The service returns only the verification result required to enable licensed features.
+                    </li>
                   </ul>
                 </div>
-              </div>  
+              </div>
               <p>
                 We do not <span class="bold">sell</span>, <span class="bold">rent</span>, or
                 <span class="bold">share</span> user information with third parties for advertising
@@ -226,19 +232,62 @@
             </div>
           </section>
           <section>
-            <h2>3. Purchase Information</h2>
+            <h2>3. Google User's Data Protection</h2>
             <div>
               <p>
-                When you purchase the Product through our storefronts <b>(Gumroad or Etsy)</b>, those
-                third-party platforms collect standard payment and billing information. We only
-                receive the information necessary to fulfill your order (such as your
+                Eigen Digital is committed to protecting the confidentiality and security of Google
+                user data.
+              </p>
+              <br />
+              <p>
+                We implement appropriate measures to secure user's information processed by the JAT
+                Editor add-on, including:
+              </p>
+              <ul>
+                <li>
+                  <span class="bold">No Storage of Google Workspace Data:</span> Spreadsheet data,
+                  calendar data, and other Google Workspace information accesed by the add-on are
+                  processed only for the duration required to complete the requested operation and
+                  are not stored, logged, or retained on Eigen Digtal's servers.
+                </li>
+                <li>
+                  <b>Encrypted Communications: </b> All communication between the Job Application
+                  Tracker, the JAT Editor Add-on, Google's services, and Eigen Digital's license
+                  verification service is transmitted over encrypted <b>HTTPS/TLS</b> connections to
+                  protect data during transit.
+                </li>
+                <li>
+                  <b>Restricted Access: </b> Any personal information collected for license
+                  verification (such as your name, email address, and license key or order ID) is
+                  accessible only to authorized personnel who require access to provide customer
+                  support, verify licenses, and maintain the service.
+                </li>
+                <li>
+                  <b>Least-Privilege Access:</b> The application requests only the Google OAuth
+                  permissions necessary to provide its documented functionality. These permissions
+                  are not used for advertising, profiling, or any unrelated purposes.
+                </li>
+                <li>
+                  <b>No Sale or Sharing og Google User Data: </b> Google user data is never sold or
+                  shared with third parties for advertising, marketing, or profiling purposes.
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <h2>4. Purchase Information</h2>
+            <div>
+              <p>
+                When you purchase the Product through our storefronts <b>(Gumroad or Etsy)</b>,
+                those third-party platforms collect standard payment and billing information. We
+                only receive the information necessary to fulfill your order (such as your
                 <span class="bold">name</span> and <span class="bold">email address</span>). We do
                 not receive or store your credit card details.
               </p>
             </div>
           </section>
           <section>
-            <h2>4. Purchase Verification</h2>
+            <h2>5. Purchase Verification</h2>
             <div>
               <p>
                 To activate or verify your license for the Job Application Tracker, you may be
@@ -267,7 +316,7 @@
             </div>
           </section>
           <section>
-            <h2>4. Contact Us</h2>
+            <h2>6. Contact Us</h2>
             <div>
               <p>
                 If you have any questions about this Privacy Policy,
