@@ -14,7 +14,8 @@ import '@/styles/components/top-navigation.css';
 import '@/styles/components/footer-navigation.css';
 import '@/styles/components/button.css';
 import '@/styles/index.css';
-import '@/scripts/components/top-navigation'
+import '@/scripts/components/top-navigation';
+import '@/scripts/components/footer-main';
 
 
 const dynamicSlider = document.querySelector('.dynamic-slider') as HTMLElement | null;

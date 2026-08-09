@@ -18,3 +18,4 @@ import '@/styles/components/top-navigation.css';
 import '@/styles/pages/company/contacts.css';
 
 import '@/scripts/components/top-navigation';
+import '@/scripts/components/footer-main';
