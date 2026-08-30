@@ -11,7 +11,4 @@ import '@/styles/components/button.css';
 import '@/styles/components/footer.css';
 import '@/styles/brand.css';
 
-import '@/styles/pages/products/job-application-tracker/eula.css';
-
-
-console.log("I'm ready! - EULA")
+import '@/styles/components/legal-docs.css';

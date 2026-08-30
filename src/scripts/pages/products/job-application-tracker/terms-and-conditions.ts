@@ -10,8 +10,4 @@ import '@/styles/elements/ul.css';
 import '@/styles/components/button.css';
 import '@/styles/components/footer.css';
 import '@/styles/brand.css';
-
-import '@/styles/pages/products/job-application-tracker/terms-and-conditions.css';
-
-
-console.log("I'm ready! - terms and conditions")
+import '@/styles/components/legal-docs.css';
