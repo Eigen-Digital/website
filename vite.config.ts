@@ -1,4 +1,4 @@
-import {defineConfig, Plugin} from "vite";
+import {defineConfig} from "vite";
 import {resolve } from "node:path";
 
 export default defineConfig({
@@ -6,18 +6,19 @@ export default defineConfig({
     build: {
         rolldownOptions: {
             input: {
-                main: resolve(__dirname, 'index.html'),
-                products: resolve(__dirname, 'products/index.html'),
-                "products/templates": resolve(__dirname, 'products/templates/index.html'),
-                "products/templates/job-application-tracker": resolve(__dirname, 'products/templates/job-application-tracker/index.html'),
-                company: resolve(__dirname, 'company/index.html'),
-                "company/contacts": resolve(__dirname, 'company/contacts.html')
+                main: resolve(import.meta.dirname, 'index.html'),
+                products: resolve(import.meta.dirname, 'products/index.html'),
+                "products/add-ons": resolve(import.meta.dirname, "products/add-ons/index.html"),
+                "products/templates": resolve(import.meta.dirname, 'products/templates/index.html'),
+                "products/templates/job-application-tracker": resolve(import.meta.dirname, 'products/templates/job-application-tracker/index.html'),
+                company: resolve(import.meta.dirname, 'company/index.html'),
+                "company/contacts": resolve(import.meta.dirname, 'company/contacts.html')
             }
         }
     },
     resolve: {
         alias: {
-            "@": resolve(__dirname, "./src")
+            "@": resolve(import.meta.dirname, "./src")
         }
     }
 })
