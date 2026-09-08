@@ -80,6 +80,7 @@ class EDFooterMain extends HTMLElement {
               <span class="nav-list-header">Products</span>
               <div class="nav-list" role="list">
                 <a href="/products/templates/" role="listitem">Templates</a>
+                <a href="/products/add-ons/" role="listitem">Add-ons</a>
               </div>
             </div>
             <div class="nav-list-container">

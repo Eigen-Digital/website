@@ -17,5 +17,6 @@ import '@/styles/components/grid.css';
 import '@/styles/components/top-navigation.css';
 import '@/styles/components/footer-mini.css';
 import '@/styles/components/product-docs.css'
+import '@/styles/pages/products/job-application-tracker/index.css';
 
 import '@/scripts/components/top-navigation';

@@ -1,11 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Add-ons</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Eigen Digital enpowers businesses worflows through automated systems and digital architecture."
+    />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,800;1,14..32,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      href="/templates/job-application.png"
+      as="image"
+      type="image/png"
+      fetchpriority="high"
+    />
+    <script type="module" src="/src/scripts/pages/products/add-ons.ts"></script>
+    <title>Add-ons | Eigen Digital</title>
+    <style>
+      @layer base, element, component, sub-component, page;
+    </style>
+  </head>
+  <body>
+    <ed-top-nav-main></ed-top-nav-main>
+    <main>
+      <div class="title-container">
+        <h1><b>Add-ons</b> That Help You Work Smarter and Faster</h1>
+        <p>
+          Browse a curated collection of ready-to-use add-ons designed to extend your preferred
+          productivity tools with great features.
+        </p>
+      </div>
+      <div class="templates-section-container">
+        <div class="templates-section grid">
+          <div class="template">
+            <a
+              href="./job-application-tracker/"
+              class="template-link"
+              aria-label="Get more details about the job application tracker"
+            >
+            </a>
+            <div class="template-preview">
+              <img
+                src="/templates/job-application.png"
+                loading="lazy"
+                alt="job application thumbnail"
+              />
+            </div>
+            <div class="description">
+              <span class="heading">Job Application Tracker</span>
+              <p class="subheading">
+                Track applications, interviews, and follow-ups in one organized system.
+              </p>
+            </div>
+            <a
+              href="https://eigendigital.gumroad.com/l/job-application-tracker-v1"
+              rel="noopener"
+              target="_blank"
+              class="button"
+              >Get Template</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <ed-footer-main></ed-footer-main>
+  </body>
 </html>

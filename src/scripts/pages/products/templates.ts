@@ -15,6 +15,7 @@ import '@/styles/components/footer.css';
 import '@/styles/components/grid.css';
 import '@/styles/components/top-navigation.css';
 import '@/styles/components/footer-navigation.css';
+import '@/styles/components/products-index.css';
 import '@/styles/pages/products/templates.css';
 
 import '@/scripts/components/top-navigation';
