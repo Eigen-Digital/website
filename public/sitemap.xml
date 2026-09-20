@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- /root -->
+  <url>
+    <loc>https://www.eigendigital.co/</loc>
+    <lastmod>2026-09-20</lastmod>
+  </url>
+  <!-- //company -->
+  <url>
+    <loc>https://www.eigendigital.co/company/contacts</loc>
+    <lastmod>2026-09-20</lastmod>
+  <url>
+  <!-- //products -->
+  <!-- //products/templates -->
+  <url>
+    <loc>https://www.eigendigital.co/products/templates/</loc>
+    <lastmod>2026-09-20</lastmod>
+  <url>
+  <url>
+    <loc>https://www.eigendigital.co/products/templates/job-application-tracker/</loc>
+    <lastmod>2026-09-20</lastmod>
+  <url>
+  <url>
+    <loc>https://www.eigendigital.co/products/add-ons/</loc>
+    <lastmod>2026-09-20</lastmod>
+  <url>
+  <!-- //products/add-ons -->
+  <url>
+    <loc>https://www.eigendigital.co/products/add-ons/sheetX/</loc>
+    <lastmod>2026-09-20</lastmod>
+  <url>
+</urlset>
