@@ -9,7 +9,7 @@ class EDFooterMain extends HTMLElement {
             <img
               width="100px"
               height="74.67px"
-              src="/eigen-digital-full-logo-white.svg"
+              src="/images/eigen-digital-full-logo-white.svg"
               alt="Eigen Digital logo"
               loading="lazy"
             />
@@ -26,7 +26,7 @@ class EDFooterMain extends HTMLElement {
                 ><img
                   width="24"
                   height="24"
-                  src="/linkedin-logo.svg"
+                  src="/images/linkedin-logo.svg"
                   alt="LinkedIn logo"
                   aria-hidden="true"
                   loading="lazy"
@@ -40,7 +40,7 @@ class EDFooterMain extends HTMLElement {
                 ><img
                   width="24"
                   height="24"
-                  src="/instagram-logo.svg"
+                  src="/images/instagram-logo.svg"
                   alt="Instagram logo"
                   aria-hidden="true"
                   loading="lazy"
@@ -54,7 +54,7 @@ class EDFooterMain extends HTMLElement {
                 ><img
                   width="24"
                   height="24"
-                  src="/twitter-logo.svg"
+                  src="/images/twitter-logo.svg"
                   alt="X logo"
                   aria-hidden="true"
                   loading="lazy"

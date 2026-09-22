@@ -8,7 +8,7 @@ class EDTopNavigationMain extends HTMLElement {
             width="28"
             height="28"
             style="object-fit: contain; object-position: center"
-            src="/eigen-digital-mini.svg"
+            src="/images/eigen-digital-mini.svg"
             alt="Eigen Digital logo"
             fetchpriority="high"
             loading="eager"

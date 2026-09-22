@@ -71,7 +71,7 @@
       font-size: clamp(0.965rem, 3vw, 1.2rem);
       font-family: var(--primary-font-family);
     }
-
+                                                          
     .subheading {
       color: var(--neutral-300);
     }
