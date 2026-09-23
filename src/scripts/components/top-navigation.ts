@@ -4,15 +4,21 @@ class EDTopNavigationMain extends HTMLElement {
     <header>
       <div class="header">
         <div class="header-container">
-          <img
-            width="28"
-            height="28"
-            style="object-fit: contain; object-position: center"
-            src="/images/eigen-digital-mini.svg"
-            alt="Eigen Digital logo"
-            fetchpriority="high"
-            loading="eager"
-          />
+          <a
+            href="/"
+            aria-label="Go to homepage"
+          >
+            <img
+              width="28"
+              height="28"
+              style="object-fit: contain; object-position: center"
+              src="/images/eigen-digital-mini.svg"
+              alt="Eigen Digital logo"
+              fetchpriority="high"
+              loading="eager"
+              aria-hidden="true"
+            />
+          </a>
           <div class="navigation" role="navigation">
             <div class="nav-list" role="list">
               <span role="listitem" popovertarget="products-popover"
