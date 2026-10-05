@@ -33,6 +33,36 @@
     <image:image>
       <image:loc>https://www.eigendigital.co/add-ons/sheetX.png</image:loc>
     </image:image>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <!-- /docs sub-domain -->
+  <!-- SheetX -->
+  <url>
+    <loc>https://docs.eigendigital.co/sheetx/guide/getting-started</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.eigendigital.co/sheetx/guide/why-sheetx</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.eigendigital.co/sheetx/guide/custom-functions/array</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.eigendigital.co/sheetx/guide/custom-functions/filter</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.eigendigital.co/sheetx/guide/custom-functions/lookup</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.eigendigital.co/sheetx/guide/custom-functions/maths</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.eigendigital.co/sheetx/guide/custom-functions/text</loc>
+    <lastmod>2026-10-05</lastmod>
   </url>
 </urlset>
